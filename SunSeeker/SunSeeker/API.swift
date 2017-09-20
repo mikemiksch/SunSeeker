@@ -21,8 +21,6 @@ struct API {
         
         guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-138.855508,36.385968,-105.720743,59.017976,100&cnt=50&APPID=\(apiKey)") else { return }
         
-        //        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/find?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&cnt=50&APPID=\(apiKey)") else { return }
-        
         URLSession.shared.dataTask(with: callURL) { (data, response, error) in
             
             if let error = error {

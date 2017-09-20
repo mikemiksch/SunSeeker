@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DE5394BBDBB13B17D0D9CFB /* Pods_SunSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */; };
 		8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790591F72CC35002C105A /* AppDelegate.swift */; };
-		8357905C1F72CC35002C105A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357905B1F72CC35002C105A /* ViewController.swift */; };
 		8357905F1F72CC35002C105A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8357905D1F72CC35002C105A /* Main.storyboard */; };
 		835790611F72CC35002C105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835790601F72CC35002C105A /* Assets.xcassets */; };
 		835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835790621F72CC35002C105A /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		835790801F72CEA9002C105A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357907F1F72CEA9002C105A /* API.swift */; };
 		835790821F72CEF6002C105A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790811F72CEF6002C105A /* City.swift */; };
 		835790841F72CF5B002C105A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790831F72CF5B002C105A /* JSONParser.swift */; };
+		835790881F72EF39002C105A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790871F72EF39002C105A /* MapViewController.swift */; };
 		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,6 @@
 		70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790561F72CC35002C105A /* SunSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790591F72CC35002C105A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8357905B1F72CC35002C105A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8357905E1F72CC35002C105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		835790601F72CC35002C105A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835790631F72CC35002C105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		8357907F1F72CEA9002C105A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		835790811F72CEF6002C105A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		835790831F72CF5B002C105A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		835790871F72EF39002C105A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,7 @@
 		8357907B1F72CC3E002C105A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8357905B1F72CC35002C105A /* ViewController.swift */,
+				835790871F72EF39002C105A /* MapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8357905C1F72CC35002C105A /* ViewController.swift in Sources */,
+				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
