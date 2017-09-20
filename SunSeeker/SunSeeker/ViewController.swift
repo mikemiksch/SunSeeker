@@ -16,9 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
-                self.cities += cities!
+                self.cities = cities ?? []
             }
             print(self.cities.count)
+            for each in self.cities {
+                print(each.name)
+                print(each.distance)
+            }
         })
 
     }

@@ -28,6 +28,6 @@ class City {
         icon = json["weather"]["icon"].string ??  ""
         weatherID = json["weather"]["id"].int ?? 0
         iconURL = URL(string: "http://openweathermap.org/img/w/\(icon).png")
-        distance = round((((coor.distance(from: API.shared.seattleCoor)) * 0.000621371) * 1000) / 1000)
+        distance = round((((coor.distance(from: API.shared.location)) * 0.000621371) * 1000) / 1000)
     }
 }
