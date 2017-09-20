@@ -15,11 +15,11 @@ typealias CitiesCallback = ([City]?) -> ()
 struct API {
     static var shared = API()
     let apiKey = AppDelegate.valueForAPIKey(keyName: "APIKey")
-    var location = CLLocation(latitude: 47.6062, longitude: -122.3321)
+//    var location = CLLocation(latitude: 47.6062, longitude: -122.3321)
     
     mutating func fetchData(callback: @escaping CitiesCallback) {
         
-        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-138.855508,36.385968,-105.720743,59.017976,100&cnt=50&APPID=\(apiKey)") else { return }
+        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-138.855508,36.385968,-105.720743,59.017976,10&cnt=50&APPID=\(apiKey)") else { return }
         
         URLSession.shared.dataTask(with: callURL) { (data, response, error) in
             

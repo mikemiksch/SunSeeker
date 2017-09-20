@@ -15,6 +15,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     var cities = [City]() {
         didSet {
             addAnnotations()
+            print(cities.count)
         }
     }
     
@@ -25,6 +26,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 self.cities = cities ?? []
             }
         })
+        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
+        let span = MKCoordinateSpanMake(50, 50)
+        let region = MKCoordinateRegionMake(center, span)
+        weatherMap.setRegion(region, animated: true)
         
     }
     
@@ -32,6 +37,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         for city in cities {
             print(city.name)
             print(city.description)
+            print(city.distance)
             let location = city.twoDLocation
             let annotation = MKPointAnnotation()
             annotation.coordinate = location
