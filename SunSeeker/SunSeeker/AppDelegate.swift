@@ -12,7 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    // Normally the key.plist file would be added to the .gitignore to protect the API key, but I've left it unignored so that the code can compile properly.
+    static func valueForAPIKey(keyName: String) -> String {
+        let filePath = Bundle.main.path(forResource: "keys", ofType: "plist")
+        let plist = NSDictionary(contentsOfFile: filePath!)
+        let value = plist?.object(forKey: keyName) as! String
+        return value
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

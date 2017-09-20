@@ -14,6 +14,7 @@
 		835790611F72CC35002C105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835790601F72CC35002C105A /* Assets.xcassets */; };
 		835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835790621F72CC35002C105A /* LaunchScreen.storyboard */; };
 		8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357906E1F72CC35002C105A /* SunSeekerTests.swift */; };
+		8357907E1F72CE2A002C105A /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8357907D1F72CE2A002C105A /* keys.plist */; };
 		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8357906A1F72CC35002C105A /* SunSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8357906E1F72CC35002C105A /* SunSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSeekerTests.swift; sourceTree = "<group>"; };
 		835790701F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8357907D1F72CE2A002C105A /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 		8357907C1F72CC3E002C105A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				8357907D1F72CE2A002C105A /* keys.plist */,
 				835790651F72CC35002C105A /* Info.plist */,
 				835790601F72CC35002C105A /* Assets.xcassets */,
 			);
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8357907E1F72CE2A002C105A /* keys.plist in Resources */,
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
 				835790611F72CC35002C105A /* Assets.xcassets in Resources */,
 				8357905F1F72CC35002C105A /* Main.storyboard in Resources */,
@@ -588,6 +592,7 @@
 				835790751F72CC35002C105A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +601,7 @@
 				835790781F72CC35002C105A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
