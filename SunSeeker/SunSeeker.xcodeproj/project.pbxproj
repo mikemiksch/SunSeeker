@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DE5394BBDBB13B17D0D9CFB /* Pods_SunSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */; };
 		8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790591F72CC35002C105A /* AppDelegate.swift */; };
 		8357905C1F72CC35002C105A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357905B1F72CC35002C105A /* ViewController.swift */; };
 		8357905F1F72CC35002C105A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8357905D1F72CC35002C105A /* Main.storyboard */; };
 		835790611F72CC35002C105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835790601F72CC35002C105A /* Assets.xcassets */; };
 		835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835790621F72CC35002C105A /* LaunchScreen.storyboard */; };
 		8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357906E1F72CC35002C105A /* SunSeekerTests.swift */; };
+		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeekerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunSeekerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FB41580596C92CA5AD3D67 /* Pods-SunSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeekerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69C948382F3F3F13486E16BB /* Pods-SunSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.release.xcconfig"; sourceTree = "<group>"; };
+		70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790561F72CC35002C105A /* SunSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790591F72CC35002C105A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8357905B1F72CC35002C105A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		8357906A1F72CC35002C105A /* SunSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8357906E1F72CC35002C105A /* SunSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSeekerTests.swift; sourceTree = "<group>"; };
 		835790701F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE5394BBDBB13B17D0D9CFB /* Pods_SunSeeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				835790581F72CC35002C105A /* SunSeeker */,
 				8357906D1F72CC35002C105A /* SunSeekerTests */,
 				835790571F72CC35002C105A /* Products */,
+				D0C1FCE285A2CE1D099DC261 /* Pods */,
+				BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +140,26 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */,
+				3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0C1FCE285A2CE1D099DC261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */,
+				69C948382F3F3F13486E16BB /* Pods-SunSeeker.release.xcconfig */,
+				65FB41580596C92CA5AD3D67 /* Pods-SunSeekerTests.debug.xcconfig */,
+				270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 835790731F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeeker" */;
 			buildPhases = (
+				58BA91EF4D2E5D028F9A790A /* [CP] Check Pods Manifest.lock */,
 				835790521F72CC35002C105A /* Sources */,
 				835790531F72CC35002C105A /* Frameworks */,
 				835790541F72CC35002C105A /* Resources */,
+				5444A588975FC3576310F2E1 /* [CP] Embed Pods Frameworks */,
+				46ABB4F1EBC04FDD0BFEA109 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */;
 			buildPhases = (
+				451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */,
 				835790661F72CC35002C105A /* Sources */,
 				835790671F72CC35002C105A /* Frameworks */,
 				835790681F72CC35002C105A /* Resources */,
+				EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */,
+				BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +265,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SunSeekerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46ABB4F1EBC04FDD0BFEA109 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5444A588975FC3576310F2E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58BA91EF4D2E5D028F9A790A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SunSeeker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		835790521F72CC35002C105A /* Sources */ = {
@@ -371,6 +511,7 @@
 		};
 		835790741F72CC35002C105A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HDU39LZWX7;
@@ -384,6 +525,7 @@
 		};
 		835790751F72CC35002C105A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C948382F3F3F13486E16BB /* Pods-SunSeeker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HDU39LZWX7;
@@ -397,6 +539,7 @@
 		};
 		835790771F72CC35002C105A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FB41580596C92CA5AD3D67 /* Pods-SunSeekerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +555,7 @@
 		};
 		835790781F72CC35002C105A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

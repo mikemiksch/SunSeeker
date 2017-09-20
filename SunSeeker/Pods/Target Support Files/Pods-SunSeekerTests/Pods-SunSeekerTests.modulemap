@@ -1,0 +1,6 @@
+framework module Pods_SunSeekerTests {
+  umbrella header "Pods-SunSeekerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
