@@ -18,6 +18,9 @@
 		835790821F72CEF6002C105A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790811F72CEF6002C105A /* City.swift */; };
 		835790841F72CF5B002C105A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790831F72CF5B002C105A /* JSONParser.swift */; };
 		835790881F72EF39002C105A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790871F72EF39002C105A /* MapViewController.swift */; };
+		8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908B1F73095F002C105A /* CustomPointAnnotation.swift */; };
+		8357908E1F73139D002C105A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908D1F73139D002C105A /* Test.swift */; };
+		835790901F7313DB002C105A /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908F1F7313DB002C105A /* CustomAnnotation.swift */; };
 		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		835790811F72CEF6002C105A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		835790831F72CF5B002C105A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		835790871F72EF39002C105A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8357908B1F73095F002C105A /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		8357908D1F73139D002C105A /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		8357908F1F7313DB002C105A /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +127,9 @@
 				8357907F1F72CEA9002C105A /* API.swift */,
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
+				8357908B1F73095F002C105A /* CustomPointAnnotation.swift */,
+				8357908D1F73139D002C105A /* Test.swift */,
+				8357908F1F7313DB002C105A /* CustomAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -389,8 +398,11 @@
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
+				8357908E1F73139D002C105A /* Test.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
+				8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
+				835790901F7313DB002C105A /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
