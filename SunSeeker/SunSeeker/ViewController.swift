@@ -16,12 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
-                self.cities = cities ?? []
+                self.cities += cities!
             }
-            for each in cities! {
-                print(each.distance)
-            }
+            print(self.cities.count)
         })
+
     }
     
     override func didReceiveMemoryWarning() {

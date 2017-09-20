@@ -22,12 +22,12 @@ class City {
     
     init(json: JSON) {
         name = json["name"].string ?? ""
-        coor = CLLocation(latitude: json["coord"]["lat"].double ?? 0.0, longitude: json["coord"]["lon"].double  ?? 0.0)
+        coor = CLLocation(latitude: json["coord"]["Lat"].double ?? 0.0, longitude: json["coord"]["Lon"].double  ?? 0.0)
         temp = (9.0 / 5.0) * ((json["main"]["temp"].double ?? 0) - 273.0) + 32.0
         description = json["weather"]["description"].string ?? ""
         icon = json["weather"]["icon"].string ??  ""
         weatherID = json["weather"]["id"].int ?? 0
         iconURL = URL(string: "http://openweathermap.org/img/w/\(icon).png")
-        distance = round((((coor.distance(from: API.shared.location)) * 0.000621371) * 1000) / 1000)
+        distance = round((((coor.distance(from: API.shared.seattleCoor)) * 0.000621371) * 1000) / 1000)
     }
 }
