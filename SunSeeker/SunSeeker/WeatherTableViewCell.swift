@@ -9,7 +9,14 @@
 import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
+    
+    var city : City!
 
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

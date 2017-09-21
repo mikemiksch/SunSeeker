@@ -18,8 +18,6 @@
 		835790821F72CEF6002C105A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790811F72CEF6002C105A /* City.swift */; };
 		835790841F72CF5B002C105A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790831F72CF5B002C105A /* JSONParser.swift */; };
 		835790881F72EF39002C105A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790871F72EF39002C105A /* MapViewController.swift */; };
-		8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908B1F73095F002C105A /* CustomPointAnnotation.swift */; };
-		8357908E1F73139D002C105A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908D1F73139D002C105A /* Test.swift */; };
 		835790A31F731426002C105A /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790911F731426002C105A /* 01d.png */; };
 		835790A41F731426002C105A /* 01n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790921F731426002C105A /* 01n.png */; };
 		835790A51F731426002C105A /* 02d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790931F731426002C105A /* 02d.png */; };
@@ -74,8 +72,6 @@
 		835790811F72CEF6002C105A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		835790831F72CF5B002C105A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		835790871F72EF39002C105A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		8357908B1F73095F002C105A /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
-		8357908D1F73139D002C105A /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		835790911F731426002C105A /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
 		835790921F731426002C105A /* 01n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01n.png; sourceTree = "<group>"; };
 		835790931F731426002C105A /* 02d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02d.png; sourceTree = "<group>"; };
@@ -167,8 +163,6 @@
 				8357907F1F72CEA9002C105A /* API.swift */,
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
-				8357908B1F73095F002C105A /* CustomPointAnnotation.swift */,
-				8357908D1F73139D002C105A /* Test.swift */,
 				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
 			);
 			name = Model;
@@ -478,10 +472,8 @@
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
-				8357908E1F73139D002C105A /* Test.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
-				8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

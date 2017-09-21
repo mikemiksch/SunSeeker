@@ -14,9 +14,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherMap: MKMapView!
     @IBAction func listButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "ListViewController", sender: sender)
     }
     
     static var userLocation = CLLocation()
+
     
     let locationManager = CLLocationManager()
     
@@ -56,6 +58,24 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 self.activityIndicator.isHidden = true
             }
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == ListViewController.identifier {
+            guard let destinationController = segue.destination as? ListViewController else { return }
+            destinationController.cities = cities.sorted(by: { (first, second) -> Bool in
+                if first.rank < second.rank {
+                    return true
+                }
+                
+                if first.rank == second.rank {
+                    return first.distance < second.distance
+                }
+                return false
+            })
+        }
     }
     
     func addAnnotations() {

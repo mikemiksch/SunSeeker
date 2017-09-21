@@ -8,28 +8,43 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var cityTable: UITableView!
 
+    var cities = [City]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let weatherCell = UINib(nibName: "WeatherTableViewCell", bundle: nil)
+        self.cityTable.register(weatherCell, forCellReuseIdentifier: WeatherTableViewCell.identifier)
+        self.cityTable.estimatedRowHeight = 128
+        self.cityTable.rowHeight = 80
+        self.cityTable.delegate = self
+        self.cityTable.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cities.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: WeatherTableViewCell.identifier, for: indexPath) as! WeatherTableViewCell
+        
+        let city = self.cities[indexPath.row]
+        cell.cellImage.image = UIImage(named: "\(city.icon).png")
+        cell.cityLabel.text = city.name
+        cell.weatherLabel.text = city.description
+        cell.distanceLabel.text = "\(city.distance) miles away"
+        
+        return cell
+    }
 
+}
+
+
+// MARK: UIResponder extension
+extension UIResponder {
+    static var identifier : String {
+            return String(describing: self)
+    }
 }

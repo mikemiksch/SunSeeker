@@ -84,6 +84,9 @@
                             <constraint firstItem="Q1d-6t-o5V" firstAttribute="trailing" secondItem="Abm-Q5-kX3" secondAttribute="trailingMargin" id="xnv-bm-MDZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTable" destination="Q1d-6t-o5V" id="dl2-o9-dIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofj-hh-3IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
