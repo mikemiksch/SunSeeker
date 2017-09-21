@@ -54,6 +54,7 @@
 		83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */; };
 		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
 		83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */; };
+		83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
 		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
 		83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookings.xcdatamodel; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +227,7 @@
 				8357907D1F72CE2A002C105A /* keys.plist */,
 				835790651F72CC35002C105A /* Info.plist */,
 				835790601F72CC35002C105A /* Assets.xcassets */,
+				83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				835790821F72CEF6002C105A /* City.swift in Sources */,
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
 				835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */,
+				83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 				835C16A21F736442005A84E5 /* Flight.swift in Sources */,
 				83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */,
@@ -592,6 +596,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */,
+			);
+			currentVersion = 83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */;
+			name = SunSeeker.xcdatamodeld;
+			path = Bookings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8357904E1F72CC35002C105A /* Project object */;
 }

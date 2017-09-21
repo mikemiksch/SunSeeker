@@ -264,6 +264,9 @@
                                         <rect key="frame" x="37.333333333333343" y="592" width="299.33333333333337" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="confirmButtonPressed:" destination="onJ-LF-xwA" eventType="touchUpInside" id="WQI-w0-zjX"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcP-nY-0y3">
                                         <rect key="frame" x="8" y="8" width="124" height="21"/>
@@ -330,6 +333,12 @@
                             <constraint firstItem="vdr-FN-uO9" firstAttribute="trailing" secondItem="Dsd-HQ-Ymb" secondAttribute="trailingMargin" id="L5Z-Cg-G2V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="departingFlightArrivalInfoLabel" destination="hQr-1m-Psc" id="HTG-vj-XKv"/>
+                        <outlet property="departingFlightDepartureInfoLabel" destination="bwh-Iz-KeS" id="jbc-qb-Fdr"/>
+                        <outlet property="returnFlightArrivalInfoLabel" destination="Dj4-Fy-ej5" id="1Ho-BV-emQ"/>
+                        <outlet property="returnFlightDepartureInfoLabel" destination="hpZ-Ro-IR8" id="mMe-ei-sNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umy-IK-4W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,7 +349,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Kg-bn-mVm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ACN-i1-lS5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ACN-i1-lS5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
