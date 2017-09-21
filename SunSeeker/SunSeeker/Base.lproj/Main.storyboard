@@ -114,10 +114,66 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="flightTable" destination="wit-xs-wbf" id="NRR-CE-dUw"/>
+                        <segue destination="ZAe-oE-Ph9" kind="show" identifier="ReturnViewController" id="D6x-Po-9aU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vah-4I-a4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2630.434782608696" y="138.58695652173915"/>
+        </scene>
+        <!--Return View Controller-->
+        <scene sceneID="A4v-Km-SIl">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZAe-oE-Ph9" customClass="ReturnViewController" customModule="SunSeeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b7h-3f-pjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="syQ-ua-6xS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0fw-qJ-1yf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6gy-pW-JGe">
+                                <rect key="frame" x="20" y="88" width="374" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6gy-pW-JGe" firstAttribute="top" secondItem="b7h-3f-pjX" secondAttribute="bottom" constant="24" id="76E-Iz-ew5"/>
+                            <constraint firstItem="syQ-ua-6xS" firstAttribute="top" secondItem="6gy-pW-JGe" secondAttribute="bottom" constant="20" id="CiG-WV-17Y"/>
+                            <constraint firstItem="6gy-pW-JGe" firstAttribute="leading" secondItem="0fw-qJ-1yf" secondAttribute="leadingMargin" id="ZPX-oF-VDP"/>
+                            <constraint firstItem="6gy-pW-JGe" firstAttribute="trailing" secondItem="0fw-qJ-1yf" secondAttribute="trailingMargin" id="ZoG-t5-DoL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flightTable" destination="6gy-pW-JGe" id="HE3-ZK-gdc"/>
+                        <segue destination="onJ-LF-xwA" kind="show" identifier="ConfirmationViewController" id="egf-0B-S8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4c4-am-Kag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3360.8695652173915" y="138.58695652173915"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="885-sF-o7u">
+            <objects>
+                <viewController id="onJ-LF-xwA" customClass="ConfirmationViewController" customModule="SunSeeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUR-K3-fcd"/>
+                        <viewControllerLayoutGuide type="bottom" id="kye-Yg-jjN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dsd-HQ-Ymb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umy-IK-4W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4052" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3e5-p6-t94">

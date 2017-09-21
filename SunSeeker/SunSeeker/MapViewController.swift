@@ -65,6 +65,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         if segue.identifier == ListViewController.identifier {
             guard let destinationController = segue.destination as? ListViewController else { return }
+            let backButton = UIBarButtonItem()
+            backButton.title = "Back"
+            navigationItem.backBarButtonItem = backButton
             destinationController.cities = cities.sorted(by: { (first, second) -> Bool in
                 if first.rank < second.rank {
                     return true

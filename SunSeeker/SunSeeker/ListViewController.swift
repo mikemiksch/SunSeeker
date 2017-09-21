@@ -26,10 +26,15 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let selectedIndex = self.cityTable.indexPathForSelectedRow?.row {
-            let selectedCity = self.cities[selectedIndex]
-            guard let destinationController = segue.destination as? DepartureViewController else { return }
-            destinationController.city = selectedCity
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        navigationItem.backBarButtonItem = backButton
+        if segue.identifier == DepartureViewController.identifier {
+            if let selectedIndex = self.cityTable.indexPathForSelectedRow?.row {
+                let selectedCity = self.cities[selectedIndex]
+                guard let destinationController = segue.destination as? DepartureViewController else { return }
+                destinationController.city = selectedCity
+            }
         }
     }
     

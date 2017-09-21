@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlightTableViewCell" id="KGk-i7-Jjw" customClass="FlightTableViewCell" customModule="SunSeeker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane-png-27932" translatesAutoresizingMaskIntoConstraints="NO" id="US9-pg-wAU">
+                        <rect key="frame" x="0.0" y="33" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="W79-Cq-tb2"/>
+                            <constraint firstAttribute="height" constant="32" id="rRY-OW-IJo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carrier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-qy-E8G">
+                        <rect key="frame" x="40" y="14" width="52.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRu-ab-QwE">
+                        <rect key="frame" x="203" y="14" width="109" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEW-hY-Imh">
+                        <rect key="frame" x="40" y="44" width="61" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-2a-52e">
+                        <rect key="frame" x="258" y="44" width="54" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-Fy-Zlw">
+                        <rect key="frame" x="40" y="73" width="38" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWx-Lo-s2z">
+                        <rect key="frame" x="274" y="73" width="38" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Eno-2a-52e" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4HC-pa-oYj"/>
+                    <constraint firstAttribute="trailing" secondItem="uWx-Lo-s2z" secondAttribute="trailing" constant="8" id="5lq-pC-bxz"/>
+                    <constraint firstItem="LWj-Fy-Zlw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="642-lI-aYh"/>
+                    <constraint firstItem="dEW-hY-Imh" firstAttribute="leading" secondItem="US9-pg-wAU" secondAttribute="trailing" constant="8" id="9iF-oo-N1c"/>
+                    <constraint firstItem="tTu-qy-E8G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Aba-ZG-Lo3"/>
+                    <constraint firstItem="tTu-qy-E8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="32" id="FeC-UP-dDZ"/>
+                    <constraint firstItem="US9-pg-wAU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lrn-1q-Fxp"/>
+                    <constraint firstItem="WRu-ab-QwE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Tie-Rn-fYZ"/>
+                    <constraint firstItem="uWx-Lo-s2z" firstAttribute="top" secondItem="Eno-2a-52e" secondAttribute="bottom" constant="8" id="UJ6-rZ-6Gi"/>
+                    <constraint firstItem="US9-pg-wAU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="b8L-pF-FDO"/>
+                    <constraint firstItem="dEW-hY-Imh" firstAttribute="top" secondItem="tTu-qy-E8G" secondAttribute="bottom" constant="9" id="fTn-m1-s1m"/>
+                    <constraint firstItem="dEW-hY-Imh" firstAttribute="leading" secondItem="US9-pg-wAU" secondAttribute="trailing" constant="8" id="lhN-YC-azL"/>
+                    <constraint firstItem="Eno-2a-52e" firstAttribute="top" secondItem="WRu-ab-QwE" secondAttribute="bottom" constant="9" id="u6g-Ge-NqD"/>
+                    <constraint firstItem="dEW-hY-Imh" firstAttribute="top" secondItem="tTu-qy-E8G" secondAttribute="bottom" constant="9" id="wwb-MT-iAe"/>
+                    <constraint firstItem="LWj-Fy-Zlw" firstAttribute="top" secondItem="dEW-hY-Imh" secondAttribute="bottom" constant="8" id="zRL-Mx-yBh"/>
+                    <constraint firstItem="WRu-ab-QwE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="zhg-ob-PmE"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="airplane-png-27932" width="1926" height="1967"/>
+    </resources>
+</document>

@@ -43,6 +43,9 @@
 		835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */; };
 		835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169D1F735CC2005A84E5 /* BookingsViewController.swift */; };
 		835C16A01F735CE7005A84E5 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169F1F735CE7005A84E5 /* Booking.swift */; };
+		835C16A21F736442005A84E5 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A11F736442005A84E5 /* Flight.swift */; };
+		835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */; };
+		835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		835C169D1F735CC2005A84E5 /* BookingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
 		835C169F1F735CE7005A84E5 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		835C16A11F736442005A84E5 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +147,8 @@
 				835790831F72CF5B002C105A /* JSONParser.swift */,
 				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
 				835C169F1F735CE7005A84E5 /* Booking.swift */,
+				835C16A11F736442005A84E5 /* Flight.swift */,
+				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 		8357907A1F72CC3E002C105A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */,
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
 				8357905D1F72CC35002C105A /* Main.storyboard */,
 				835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */,
@@ -296,6 +305,7 @@
 				835790AD1F731426002C105A /* 10d.png in Resources */,
 				835790B11F731426002C105A /* 13d.png in Resources */,
 				835790B01F731426002C105A /* 11n.png in Resources */,
+				835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */,
 				835790AC1F731426002C105A /* 09n.png in Resources */,
 				835790B41F731426002C105A /* 50n.png in Resources */,
 				835790A81F731426002C105A /* 03n.png in Resources */,
@@ -373,11 +383,13 @@
 				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
 				835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */,
 				835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */,
+				835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
 				835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
+				835C16A21F736442005A84E5 /* Flight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

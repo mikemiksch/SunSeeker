@@ -9,6 +9,9 @@
 import UIKit
 
 class ConfirmationViewController: UIViewController {
+    
+    var departureFlight : Flight!
+    var returnFlight : Flight!
 
     override func viewDidLoad() {
         super.viewDidLoad()
