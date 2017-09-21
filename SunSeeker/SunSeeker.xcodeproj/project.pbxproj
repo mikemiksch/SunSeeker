@@ -12,7 +12,6 @@
 		8357905F1F72CC35002C105A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8357905D1F72CC35002C105A /* Main.storyboard */; };
 		835790611F72CC35002C105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835790601F72CC35002C105A /* Assets.xcassets */; };
 		835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835790621F72CC35002C105A /* LaunchScreen.storyboard */; };
-		8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357906E1F72CC35002C105A /* SunSeekerTests.swift */; };
 		8357907E1F72CE2A002C105A /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8357907D1F72CE2A002C105A /* keys.plist */; };
 		835790801F72CEA9002C105A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357907F1F72CEA9002C105A /* API.swift */; };
 		835790821F72CEF6002C105A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790811F72CEF6002C105A /* City.swift */; };
@@ -39,18 +38,12 @@
 		835790B61F731B5B002C105A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790B51F731B5B002C105A /* ListViewController.swift */; };
 		835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */; };
 		835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */; };
-		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
+		835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16971F735C5E005A84E5 /* DepartureViewController.swift */; };
+		835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16991F735C74005A84E5 /* ReturnViewController.swift */; };
+		835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */; };
+		835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169D1F735CC2005A84E5 /* BookingsViewController.swift */; };
+		835C16A01F735CE7005A84E5 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169F1F735CE7005A84E5 /* Booking.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8357906B1F72CC35002C105A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8357904E1F72CC35002C105A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 835790551F72CC35002C105A;
-			remoteInfo = SunSeeker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeekerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,9 +57,6 @@
 		835790601F72CC35002C105A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835790631F72CC35002C105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835790651F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8357906A1F72CC35002C105A /* SunSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8357906E1F72CC35002C105A /* SunSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSeekerTests.swift; sourceTree = "<group>"; };
-		835790701F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8357907D1F72CE2A002C105A /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		8357907F1F72CEA9002C105A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		835790811F72CEF6002C105A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -93,6 +83,11 @@
 		835790B51F731B5B002C105A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		835C16971F735C5E005A84E5 /* DepartureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureViewController.swift; sourceTree = "<group>"; };
+		835C16991F735C74005A84E5 /* ReturnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnViewController.swift; sourceTree = "<group>"; };
+		835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		835C169D1F735CC2005A84E5 /* BookingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		835C169F1F735CE7005A84E5 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,14 +100,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		835790671F72CC35002C105A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				835790581F72CC35002C105A /* SunSeeker */,
-				8357906D1F72CC35002C105A /* SunSeekerTests */,
 				835790571F72CC35002C105A /* Products */,
 				D0C1FCE285A2CE1D099DC261 /* Pods */,
 				BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */,
@@ -131,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				835790561F72CC35002C105A /* SunSeeker.app */,
-				8357906A1F72CC35002C105A /* SunSeekerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,15 +132,6 @@
 			path = SunSeeker;
 			sourceTree = "<group>";
 		};
-		8357906D1F72CC35002C105A /* SunSeekerTests */ = {
-			isa = PBXGroup;
-			children = (
-				8357906E1F72CC35002C105A /* SunSeekerTests.swift */,
-				835790701F72CC35002C105A /* Info.plist */,
-			);
-			path = SunSeekerTests;
-			sourceTree = "<group>";
-		};
 		835790791F72CC3D002C105A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +140,7 @@
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
 				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
+				835C169F1F735CE7005A84E5 /* Booking.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,6 +160,10 @@
 			children = (
 				835790871F72EF39002C105A /* MapViewController.swift */,
 				835790B51F731B5B002C105A /* ListViewController.swift */,
+				835C16971F735C5E005A84E5 /* DepartureViewController.swift */,
+				835C16991F735C74005A84E5 /* ReturnViewController.swift */,
+				835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */,
+				835C169D1F735CC2005A84E5 /* BookingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,27 +239,6 @@
 			productReference = 835790561F72CC35002C105A /* SunSeeker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		835790691F72CC35002C105A /* SunSeekerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */;
-			buildPhases = (
-				451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */,
-				835790661F72CC35002C105A /* Sources */,
-				835790671F72CC35002C105A /* Frameworks */,
-				835790681F72CC35002C105A /* Resources */,
-				EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */,
-				BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8357906C1F72CC35002C105A /* PBXTargetDependency */,
-			);
-			name = SunSeekerTests;
-			productName = SunSeekerTests;
-			productReference = 8357906A1F72CC35002C105A /* SunSeekerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,12 +253,6 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = HDU39LZWX7;
 						ProvisioningStyle = Automatic;
-					};
-					835790691F72CC35002C105A = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = HDU39LZWX7;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 835790551F72CC35002C105A;
 					};
 				};
 			};
@@ -316,7 +270,6 @@
 			projectRoot = "";
 			targets = (
 				835790551F72CC35002C105A /* SunSeeker */,
-				835790691F72CC35002C105A /* SunSeekerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,34 +305,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		835790681F72CC35002C105A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SunSeekerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		46ABB4F1EBC04FDD0BFEA109 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,36 +359,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -469,32 +367,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */,
+				835C16A01F735CE7005A84E5 /* Booking.swift in Sources */,
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
+				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
+				835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */,
+				835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
+				835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		835790661F72CC35002C105A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8357906C1F72CC35002C105A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 835790551F72CC35002C105A /* SunSeeker */;
-			targetProxy = 8357906B1F72CC35002C105A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8357905D1F72CC35002C105A /* Main.storyboard */ = {
@@ -639,38 +526,6 @@
 			};
 			name = Release;
 		};
-		835790771F72CC35002C105A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65FB41580596C92CA5AD3D67 /* Pods-SunSeekerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HDU39LZWX7;
-				INFOPLIST_FILE = SunSeekerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MikschSoft.SunSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunSeeker.app/SunSeeker";
-			};
-			name = Debug;
-		};
-		835790781F72CC35002C105A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HDU39LZWX7;
-				INFOPLIST_FILE = SunSeekerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MikschSoft.SunSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunSeeker.app/SunSeeker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -688,15 +543,6 @@
 			buildConfigurations = (
 				835790741F72CC35002C105A /* Debug */,
 				835790751F72CC35002C105A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				835790771F72CC35002C105A /* Debug */,
-				835790781F72CC35002C105A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

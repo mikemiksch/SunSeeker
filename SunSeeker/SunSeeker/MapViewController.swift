@@ -14,7 +14,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherMap: MKMapView!
     @IBAction func listButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "ListViewController", sender: sender)
     }
     
     static var userLocation = CLLocation()
@@ -30,6 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Seek the Sun!"
         self.activityIndicator.startAnimating()
         let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
         let span = MKCoordinateSpanMake(3, 3)

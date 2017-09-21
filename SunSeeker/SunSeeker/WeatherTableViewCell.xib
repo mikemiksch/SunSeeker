@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-Wd-IJM">
@@ -33,25 +33,34 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-2A-hNY">
-                        <rect key="frame" x="80" y="36" width="47.5" height="14.5"/>
+                        <rect key="frame" x="80" y="36" width="48" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojg-qq-Va0">
-                        <rect key="frame" x="80" y="54.5" width="49.5" height="14.5"/>
+                        <rect key="frame" x="80" y="55" width="50" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane-png-27932" translatesAutoresizingMaskIntoConstraints="NO" id="p5B-Lz-aSA">
+                        <rect key="frame" x="280" y="24" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ht0-yk-5LM"/>
+                            <constraint firstAttribute="width" constant="32" id="yWh-sT-hF7"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ojg-qq-Va0" firstAttribute="top" secondItem="Cde-2A-hNY" secondAttribute="bottom" constant="4" id="3uw-Ik-pPr"/>
                     <constraint firstItem="uKL-8T-l3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CeE-PK-NHM"/>
                     <constraint firstItem="Cde-2A-hNY" firstAttribute="leading" secondItem="5lv-Wd-IJM" secondAttribute="trailing" constant="8" id="D7k-8K-ib6"/>
+                    <constraint firstItem="p5B-Lz-aSA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ffw-AP-PBT"/>
                     <constraint firstItem="Cde-2A-hNY" firstAttribute="top" secondItem="uKL-8T-l3x" secondAttribute="bottom" constant="4" id="IEG-mz-JV0"/>
                     <constraint firstItem="5lv-Wd-IJM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LT7-dd-jhZ"/>
                     <constraint firstItem="5lv-Wd-IJM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QQT-j6-dul"/>
+                    <constraint firstItem="p5B-Lz-aSA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SXs-RO-m9x"/>
                     <constraint firstItem="uKL-8T-l3x" firstAttribute="leading" secondItem="5lv-Wd-IJM" secondAttribute="trailing" constant="8" id="ijh-E9-qKN"/>
                     <constraint firstItem="ojg-qq-Va0" firstAttribute="leading" secondItem="5lv-Wd-IJM" secondAttribute="trailing" constant="8" id="t7G-NQ-zaa"/>
                 </constraints>
@@ -64,4 +73,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="airplane-png-27932" width="1926" height="1967"/>
+    </resources>
 </document>
