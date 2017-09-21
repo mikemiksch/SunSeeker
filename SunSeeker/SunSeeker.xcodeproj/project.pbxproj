@@ -39,6 +39,7 @@
 		835790B21F731426002C105A /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A01F731426002C105A /* 13n.png */; };
 		835790B31F731426002C105A /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A11F731426002C105A /* 50d.png */; };
 		835790B41F731426002C105A /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A21F731426002C105A /* 50n.png */; };
+		835790B61F731B5B002C105A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790B51F731B5B002C105A /* ListViewController.swift */; };
 		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		835790A01F731426002C105A /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13n.png; sourceTree = "<group>"; };
 		835790A11F731426002C105A /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
 		835790A21F731426002C105A /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50n.png; sourceTree = "<group>"; };
+		835790B51F731B5B002C105A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				835790871F72EF39002C105A /* MapViewController.swift */,
+				835790B51F731B5B002C105A /* ListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				835790801F72CEA9002C105A /* API.swift in Sources */,
 				8357908E1F73139D002C105A /* Test.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
+				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
 				8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 				835790901F7313DB002C105A /* CustomAnnotation.swift in Sources */,

@@ -19,7 +19,6 @@ class City {
     let icon : String
     let weatherID : Int
     let distance : Double
-//    let iconURL : URL!
     
     init(json: JSON) {
         name = json["name"].string ?? ""
@@ -29,7 +28,6 @@ class City {
         description = json["weather"][0]["description"].string ?? ""
         icon = json["weather"][0]["icon"].string ??  ""
         weatherID = json["weather"]["id"].int ?? 0
-//        iconURL = URL(string: "http://openweathermap.org/img/w/\(icon).png")
-        distance = round((((coor.distance(from: CLLocation(latitude: 47.6062, longitude: -122.3321))) * 0.000621371) * 1000) / 1000)
+        distance = round((((coor.distance(from: MapViewController.userLocation)) * 0.000621371) * 1000) / 1000)
     }
 }

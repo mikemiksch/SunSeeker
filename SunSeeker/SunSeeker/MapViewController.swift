@@ -9,15 +9,15 @@
 import UIKit
 import MapKit
 
-class CustomPointAnnotation: MKPointAnnotation {
-    var imageName: String!
-}
-
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
 
     @IBOutlet weak var weatherMap: MKMapView!
+    @IBAction func listButtonPressed(_ sender: Any) {
+    }
     
     static var userLocation = CLLocation()
+    
+    let locationManager = CLLocationManager()
     
     var cities = [City]() {
         didSet {
@@ -27,17 +27,30 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.weatherMap.delegate = self
+        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
+        let span = MKCoordinateSpanMake(3, 3)
+        let region = MKCoordinateRegionMake(center, span)
+        weatherMap.setRegion(region, animated: true)
+        weatherMap.delegate = self
+        weatherMap.showsUserLocation = true
+        
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+            locationManager.startUpdatingLocation()
+            let currentCoordinates = locationManager.location?.coordinate
+            MapViewController.userLocation = CLLocation(latitude: (currentCoordinates?.latitude)!, longitude: (currentCoordinates?.longitude)!)
+        } else {
+            MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
+        }
+        
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
                 self.cities = cities ?? []
             }
         })
-        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
-        let span = MKCoordinateSpanMake(5, 5)
-        let region = MKCoordinateRegionMake(center, span)
-        weatherMap.setRegion(region, animated: true)
-        
     }
     
     func addAnnotations() {
@@ -74,4 +87,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         return annotationView
     }
 
+}
+
+// MARK: CustomPointAnnotation definition
+class CustomPointAnnotation: MKPointAnnotation {
+    var imageName: String!
 }
