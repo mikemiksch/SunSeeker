@@ -21,7 +21,7 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
         
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
-        self.flightTable.rowHeight = 100
+        self.flightTable.rowHeight = 150
         self.flightTable.delegate = self
         self.flightTable.dataSource = self
         
@@ -56,8 +56,8 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
             let newFlight = Flight()
             let randomNum = Int(arc4random_uniform(5))
             newFlight.carrier = carriers[randomNum]
-            newFlight.departureAirport = "SeaTac Airport"
-            newFlight.arrivalAirport = "\(city.name) Airport"
+            newFlight.departureAirport = "SeaTac"
+            newFlight.arrivalAirport = city.name
             newFlight.gate = Int(arc4random_uniform(50)) + 1
             newFlight.flightNumber = Int(arc4random_uniform(1000)) + 1
             newFlight.departureTime = departureTime!
@@ -67,9 +67,6 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
             
             departureTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
-            
-            print(calendar.component(.hour, from: newFlight.departureTime))
-            print(calendar.component(.minute, from: newFlight.departureTime))
         }
     }
     
@@ -78,17 +75,20 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
        let cell = flightTable.dequeueReusableCell(withIdentifier: FlightTableViewCell.identifier, for: indexPath) as! FlightTableViewCell
         
         let flight = self.flights[indexPath.row]
         cell.flight = flight
         
         cell.flightNumberLabel.text = "Flight \(flight.flightNumber)"
-        cell.departureLabel.text = "Departs \(flight.departureAirport)"
+        cell.departureLabel.text = flight.departureAirport
         cell.carrierLabel.text = flight.carrier
-        cell.arrivalLabel.text = "Arrives \(flight.arrivalAirport)"
-        cell.departureTimeLabel.text = "\(String(calendar.component(.hour, from: flight.departureTime))):\(String(calendar.component(.minute, from: flight.departureTime)))"
-        cell.arrivialTimeLabel.text = "\(String(calendar.component(.hour, from: flight.arrivalTime))):\(String(calendar.component(.minute, from: flight.arrivalTime)))"
+        cell.arrivalLabel.text = flight.arrivalAirport
+        cell.departureTimeLabel.text = dateFormatter.string(from: flight.departureTime)
+        cell.arrivialTimeLabel.text = dateFormatter.string(from: flight.arrivalTime)
         
         return cell
     }

@@ -22,7 +22,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
         self.navigationItem.title = "Return Flights From \(city.name)"
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
-        self.flightTable.rowHeight = 100
+        self.flightTable.rowHeight = 150
         self.flightTable.delegate = self
         self.flightTable.dataSource = self
         
@@ -34,6 +34,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
         super.prepare(for: segue, sender: sender)
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
+        navigationItem.backBarButtonItem = backButton
         if segue.identifier == ConfirmationViewController.identifier {
             if let selectedIndex = self.flightTable.indexPathForSelectedRow?.row {
                 let selectedFlight = self.flights[selectedIndex]
@@ -55,8 +56,8 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
             let newFlight = Flight()
             let randomNum = Int(arc4random_uniform(5))
             newFlight.carrier = carriers[randomNum]
-            newFlight.departureAirport = "\(city.name) Airport"
-            newFlight.arrivalAirport = "SeaTac Airport"
+            newFlight.departureAirport = city.name
+            newFlight.arrivalAirport = "SeaTac"
             newFlight.gate = Int(arc4random_uniform(50)) + 1
             newFlight.flightNumber = Int(arc4random_uniform(1000)) + 1
             newFlight.departureTime = departureTime!
@@ -64,7 +65,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
             
             flights.append(newFlight)
             
-            departureTime = calendar.date(byAdding: .day, value: 1, to: departureTime!)
+            departureTime = calendar.date(byAdding: .hour, value: 26, to: departureTime!)
             arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             
         }
@@ -76,12 +77,20 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
         let cell = flightTable.dequeueReusableCell(withIdentifier: FlightTableViewCell.identifier, for: indexPath) as! FlightTableViewCell
         
         let flight = self.flights[indexPath.row]
         cell.flight = flight
         
-        // Fill out cell here
+        cell.flightNumberLabel.text = "Flight \(flight.flightNumber)"
+        cell.departureLabel.text = flight.departureAirport
+        cell.carrierLabel.text = flight.carrier
+        cell.arrivalLabel.text = flight.arrivalAirport
+        cell.departureTimeLabel.text = dateFormatter.string(from: flight.departureTime)
+        cell.arrivialTimeLabel.text = dateFormatter.string(from: flight.arrivalTime)
         
         return cell
     }

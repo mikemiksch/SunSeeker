@@ -29,7 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Seek the Sun!"
+        self.navigationItem.title = "SunSeeker"
         self.activityIndicator.startAnimating()
         let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
         let span = MKCoordinateSpanMake(3, 3)
