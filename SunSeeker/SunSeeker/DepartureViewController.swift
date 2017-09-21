@@ -13,6 +13,7 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var flightTable: UITableView!
     var city : City!
     var flights = [Flight]()
+    let calendar = Calendar.current
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,6 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     
     func makeDummyFlights() {
         let currentDate = Date()
-        let calendar = Calendar.current
         var departureTime = calendar.date(byAdding: .hour, value: 2, to: currentDate)
         var arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
         let carriers = ["Delta", "Southwest", "UnitedAir", "JetBlue", "Virgin"]
@@ -68,6 +68,8 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
             departureTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             
+            print(calendar.component(.hour, from: newFlight.departureTime))
+            print(calendar.component(.minute, from: newFlight.departureTime))
         }
     }
     
@@ -81,7 +83,12 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
         let flight = self.flights[indexPath.row]
         cell.flight = flight
         
-        // Fill out cell here
+        cell.flightNumberLabel.text = "Flight \(flight.flightNumber)"
+        cell.departureLabel.text = "Departs \(flight.departureAirport)"
+        cell.carrierLabel.text = flight.carrier
+        cell.arrivalLabel.text = "Arrives \(flight.arrivalAirport)"
+        cell.departureTimeLabel.text = "\(String(calendar.component(.hour, from: flight.departureTime))):\(String(calendar.component(.minute, from: flight.departureTime)))"
+        cell.arrivialTimeLabel.text = "\(String(calendar.component(.hour, from: flight.arrivalTime))):\(String(calendar.component(.minute, from: flight.arrivalTime)))"
         
         return cell
     }

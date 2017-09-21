@@ -25,28 +25,29 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-do-ZlT">
                                 <rect key="frame" x="20" y="83" width="374" height="625"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Qr-s9B">
-                                <rect key="frame" x="298" y="590" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <activityIndicatorView opaque="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-5E-bvP">
+                                <rect key="frame" x="189" y="350" width="37" height="37"/>
+                                <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Qr-s9B">
+                                <rect key="frame" x="368" y="706" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="listButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6W-hQ-Xyy"/>
                                     <segue destination="HVC-p5-QUB" kind="show" identifier="ListViewController" id="VJp-cR-6Y1"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-5E-bvP">
-                                <rect key="frame" x="189" y="350" width="37" height="37"/>
-                                <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="52K-Qr-s9B" secondAttribute="trailing" id="97x-jb-2ss"/>
                             <constraint firstItem="7x0-do-ZlT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ANc-n4-YEt"/>
                             <constraint firstItem="2mn-5E-bvP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BHL-ai-3fL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7x0-do-ZlT" secondAttribute="bottom" constant="28" id="L3o-fS-ENc"/>
                             <constraint firstItem="7x0-do-ZlT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LOf-Wf-QGj"/>
                             <constraint firstItem="2mn-5E-bvP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NXn-BN-0Qh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="52K-Qr-s9B" secondAttribute="bottom" id="sse-Te-CBW"/>
                             <constraint firstItem="7x0-do-ZlT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="x7t-kL-91D"/>
                         </constraints>
                     </view>
@@ -106,13 +107,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wit-xs-wbf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wit-xs-wbf">
                                 <rect key="frame" x="20" y="87" width="374" height="629"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wit-xs-wbf" firstAttribute="trailing" secondItem="Oc5-Sl-wkD" secondAttribute="trailingMargin" id="6cm-aI-r6X"/>
+                            <constraint firstItem="wit-xs-wbf" firstAttribute="top" secondItem="5sN-Fr-HFF" secondAttribute="bottom" constant="23" id="HFD-uR-E6S"/>
+                            <constraint firstItem="wit-xs-wbf" firstAttribute="leading" secondItem="Oc5-Sl-wkD" secondAttribute="leadingMargin" id="d57-g7-G1X"/>
+                            <constraint firstItem="G3U-Ff-d1T" firstAttribute="top" secondItem="wit-xs-wbf" secondAttribute="bottom" constant="20" id="xV1-Aw-WwG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flightTable" destination="wit-xs-wbf" id="NRR-CE-dUw"/>

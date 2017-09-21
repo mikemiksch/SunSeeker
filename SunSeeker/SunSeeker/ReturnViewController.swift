@@ -14,6 +14,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
     var city : City!
     var departureFlight : Flight!
     var flights = [Flight]()
+    let calendar = Calendar.current
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,6 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
     
     func makeDummyFlights() {
         let currentDate = departureFlight.arrivalTime
-        let calendar = Calendar.current
         var departureTime = calendar.date(byAdding: .day, value: 1, to: currentDate)
         var arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
         let carriers = ["Delta", "Southwest", "UnitedAir", "JetBlue", "Virgin"]

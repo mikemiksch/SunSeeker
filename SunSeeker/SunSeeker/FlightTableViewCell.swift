@@ -9,12 +9,20 @@
 import UIKit
 
 class FlightTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var flightNumberLabel: UILabel!
+    @IBOutlet weak var departureLabel: UILabel!
+    @IBOutlet weak var carrierLabel: UILabel!
+    @IBOutlet weak var arrivalLabel: UILabel!
+    @IBOutlet weak var departureTimeLabel: UILabel!
+    @IBOutlet weak var arrivialTimeLabel: UILabel!
     
     var flight : Flight!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        departureLabel.adjustsFontSizeToFitWidth = true
+        arrivalLabel.adjustsFontSizeToFitWidth = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
