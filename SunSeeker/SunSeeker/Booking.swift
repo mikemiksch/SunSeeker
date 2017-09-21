@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class Booking {
+    let departureFlight : Flight
+    let returnFlight : Flight
+    init(departure: Flight, returning: Flight) {
+        self.departureFlight = departure
+        self.returnFlight = returning
+    }
+}

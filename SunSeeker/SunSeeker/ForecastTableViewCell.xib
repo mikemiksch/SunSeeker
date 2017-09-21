@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ForecastTableViewCell" customModule="SunSeeker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MFp-dr-Lq5">
+                        <rect key="frame" x="16" y="7" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="M6S-xp-Nxy"/>
+                            <constraint firstAttribute="height" constant="64" id="mQi-0J-dhQ"/>
+                            <constraint firstAttribute="width" constant="64" id="nvW-vP-yCY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG3-ON-oaT">
+                        <rect key="frame" x="88" y="8" width="36" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-Zl-HAy">
+                        <rect key="frame" x="88" y="29" width="64.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="top" secondItem="UG3-ON-oaT" secondAttribute="bottom" id="2xf-4e-hjq"/>
+                    <constraint firstItem="MFp-dr-Lq5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Dw3-6e-pEK"/>
+                    <constraint firstItem="MFp-dr-Lq5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G60-gS-KHb"/>
+                    <constraint firstItem="UG3-ON-oaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Py2-9K-efV"/>
+                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="WZN-Jp-LVs"/>
+                    <constraint firstItem="UG3-ON-oaT" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="enQ-I5-H15"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImage" destination="MFp-dr-Lq5" id="LMl-Qy-OHp"/>
+                <outlet property="dateLabel" destination="UG3-ON-oaT" id="5oE-8Z-x8r"/>
+                <outlet property="weatherLabel" destination="Z8M-Zl-HAy" id="3pY-la-tmC"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

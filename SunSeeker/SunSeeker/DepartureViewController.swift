@@ -11,6 +11,7 @@ import UIKit
 class DepartureViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var flightTable: UITableView!
+    var date : Date!
     var city : City!
     var flights = [Flight]()
     let calendar = Calendar.current

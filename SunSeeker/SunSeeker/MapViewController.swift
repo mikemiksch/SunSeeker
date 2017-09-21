@@ -20,7 +20,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     
     let locationManager = CLLocationManager()
-    
+    var forecasts = [Forecast]()
     var cities = [City]() {
         didSet {
             addAnnotations()
@@ -58,6 +58,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 self.activityIndicator.isHidden = true
             }
         })
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

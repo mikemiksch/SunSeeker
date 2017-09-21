@@ -46,6 +46,10 @@
 		835C16A21F736442005A84E5 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A11F736442005A84E5 /* Flight.swift */; };
 		835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */; };
 		835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */; };
+		835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A71F740AC5005A84E5 /* Forecast.swift */; };
+		835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A91F741068005A84E5 /* ForecastViewController.swift */; };
+		83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */; };
+		83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +98,10 @@
 		835C16A11F736442005A84E5 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
 		835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
+		835C16A71F740AC5005A84E5 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		835C16A91F741068005A84E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				835790591F72CC35002C105A /* AppDelegate.swift */,
+				835C16A71F740AC5005A84E5 /* Forecast.swift */,
 				8357907F1F72CEA9002C105A /* API.swift */,
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
@@ -149,6 +158,7 @@
 				835C169F1F735CE7005A84E5 /* Booking.swift */,
 				835C16A11F736442005A84E5 /* Flight.swift */,
 				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
+				83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 		8357907A1F72CC3E002C105A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */,
 				835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */,
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
 				8357905D1F72CC35002C105A /* Main.storyboard */,
@@ -173,6 +184,7 @@
 				835C16991F735C74005A84E5 /* ReturnViewController.swift */,
 				835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */,
 				835C169D1F735CC2005A84E5 /* BookingsViewController.swift */,
+				835C16A91F741068005A84E5 /* ForecastViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,6 +310,7 @@
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
 				835790B21F731426002C105A /* 13n.png in Resources */,
 				835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */,
+				83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */,
 				835790B31F731426002C105A /* 50d.png in Resources */,
 				835790A41F731426002C105A /* 01n.png in Resources */,
 				835790611F72CC35002C105A /* Assets.xcassets in Resources */,
@@ -380,14 +393,17 @@
 				835C16A01F735CE7005A84E5 /* Booking.swift in Sources */,
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
+				835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */,
 				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
 				835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */,
 				835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */,
 				835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
+				83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */,
 				835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
+				835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 				835C16A21F736442005A84E5 /* Flight.swift in Sources */,
 			);

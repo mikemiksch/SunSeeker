@@ -18,7 +18,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationItem.title = "Nearest Sun to You"
         let weatherCell = UINib(nibName: "WeatherTableViewCell", bundle: nil)
         self.cityTable.register(weatherCell, forCellReuseIdentifier: WeatherTableViewCell.identifier)
-        self.cityTable.estimatedRowHeight = 128
         self.cityTable.rowHeight = 80
         self.cityTable.delegate = self
         self.cityTable.dataSource = self
@@ -29,13 +28,20 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         navigationItem.backBarButtonItem = backButton
-        if segue.identifier == DepartureViewController.identifier {
+        if segue.identifier == ForecastViewController.identifier {
             if let selectedIndex = self.cityTable.indexPathForSelectedRow?.row {
                 let selectedCity = self.cities[selectedIndex]
-                guard let destinationController = segue.destination as? DepartureViewController else { return }
+                guard let destinationController = segue.destination as? ForecastViewController else { return }
                 destinationController.city = selectedCity
             }
         }
+//        if segue.identifier == DepartureViewController.identifier {
+//            if let selectedIndex = self.cityTable.indexPathForSelectedRow?.row {
+//                let selectedCity = self.cities[selectedIndex]
+//                guard let destinationController = segue.destination as? DepartureViewController else { return }
+//                destinationController.city = selectedCity
+//            }
+//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,7 +61,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: DepartureViewController.identifier, sender: nil)
+//        self.performSegue(withIdentifier: DepartureViewController.identifier, sender: nil)
+        self.performSegue(withIdentifier: ForecastViewController.identifier, sender: nil)
     }
 
 }

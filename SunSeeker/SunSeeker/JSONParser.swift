@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJSON
 
 typealias JSONParserCallback = (Bool, [City]?) -> ()
+typealias JSONForecastCallback = (Bool, [Forecast]?) -> ()
 
 class JSONParser {
     
@@ -22,5 +23,17 @@ class JSONParser {
             cities.append(newCity)
         }
         callback(true, cities)
+    }
+    
+    class func parseForecast(data: Data, callback: JSONForecastCallback) {
+        var forecasts = [Forecast]()
+        let json = JSON(data: data)
+        let list = Array(json["list"])
+        print(list)
+        for forecast in list {
+            let newForecast = Forecast(json: forecast.1)
+            forecasts.append(newForecast)
+        }
+        callback(true, forecasts)
     }
 }
