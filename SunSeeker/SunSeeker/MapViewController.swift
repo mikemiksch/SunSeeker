@@ -11,6 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherMap: MKMapView!
     @IBAction func listButtonPressed(_ sender: Any) {
     }
@@ -27,6 +28,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.activityIndicator.startAnimating()
         let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
         let span = MKCoordinateSpanMake(3, 3)
         let region = MKCoordinateRegionMake(center, span)
@@ -46,9 +48,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
         }
         
+        
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
                 self.cities = cities ?? []
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
             }
         })
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-do-ZlT">
-                                <rect key="frame" x="16" y="28" width="343" height="611"/>
+                                <rect key="frame" x="20" y="28" width="374" height="680"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Qr-s9B">
                                 <rect key="frame" x="298" y="590" width="46" height="30"/>
@@ -35,16 +35,23 @@
                                     <segue destination="HVC-p5-QUB" kind="show" identifier="ListViewController" id="VJp-cR-6Y1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-5E-bvP">
+                                <rect key="frame" x="189" y="350" width="37" height="37"/>
+                                <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7x0-do-ZlT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="EGB-vI-yQd"/>
-                            <constraint firstItem="7x0-do-ZlT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SsY-8a-efJ"/>
-                            <constraint firstItem="7x0-do-ZlT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="diL-VA-min"/>
-                            <constraint firstItem="7x0-do-ZlT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fP9-CB-6nL"/>
+                            <constraint firstItem="7x0-do-ZlT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ANc-n4-YEt"/>
+                            <constraint firstItem="2mn-5E-bvP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BHL-ai-3fL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7x0-do-ZlT" secondAttribute="bottom" constant="28" id="L3o-fS-ENc"/>
+                            <constraint firstItem="7x0-do-ZlT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LOf-Wf-QGj"/>
+                            <constraint firstItem="2mn-5E-bvP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NXn-BN-0Qh"/>
+                            <constraint firstItem="7x0-do-ZlT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="x7t-kL-91D"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="2mn-5E-bvP" id="k3H-RA-cT2"/>
                         <outlet property="weatherMap" destination="7x0-do-ZlT" id="aA4-cJ-MoI"/>
                     </connections>
                 </viewController>
@@ -61,20 +68,20 @@
                         <viewControllerLayoutGuide type="bottom" id="TUo-V7-LwJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Abm-Q5-kX3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-6t-o5V">
-                                <rect key="frame" x="16" y="28" width="343" height="611"/>
+                                <rect key="frame" x="20" y="28" width="374" height="680"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="top" secondItem="TX2-HB-nBQ" secondAttribute="bottom" constant="8" symbolic="YES" id="ccX-kF-tad"/>
-                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="centerX" secondItem="Abm-Q5-kX3" secondAttribute="centerX" id="dWB-wB-G3k"/>
-                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="centerY" secondItem="Abm-Q5-kX3" secondAttribute="centerY" id="eMu-lG-aEE"/>
-                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="leading" secondItem="Abm-Q5-kX3" secondAttribute="leadingMargin" id="sW6-Zw-ykJ"/>
+                            <constraint firstItem="TUo-V7-LwJ" firstAttribute="top" secondItem="Q1d-6t-o5V" secondAttribute="bottom" constant="28" id="D2G-ui-tZy"/>
+                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="leading" secondItem="Abm-Q5-kX3" secondAttribute="leadingMargin" id="RiL-jW-JSy"/>
+                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="top" secondItem="TX2-HB-nBQ" secondAttribute="bottom" constant="8" id="mna-pU-Wnr"/>
+                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="trailing" secondItem="Abm-Q5-kX3" secondAttribute="trailingMargin" id="xnv-bm-MDZ"/>
                         </constraints>
                     </view>
                 </viewController>

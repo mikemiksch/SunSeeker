@@ -20,7 +20,6 @@
 		835790881F72EF39002C105A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790871F72EF39002C105A /* MapViewController.swift */; };
 		8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908B1F73095F002C105A /* CustomPointAnnotation.swift */; };
 		8357908E1F73139D002C105A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908D1F73139D002C105A /* Test.swift */; };
-		835790901F7313DB002C105A /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357908F1F7313DB002C105A /* CustomAnnotation.swift */; };
 		835790A31F731426002C105A /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790911F731426002C105A /* 01d.png */; };
 		835790A41F731426002C105A /* 01n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790921F731426002C105A /* 01n.png */; };
 		835790A51F731426002C105A /* 02d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790931F731426002C105A /* 02d.png */; };
@@ -40,6 +39,8 @@
 		835790B31F731426002C105A /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A11F731426002C105A /* 50d.png */; };
 		835790B41F731426002C105A /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A21F731426002C105A /* 50n.png */; };
 		835790B61F731B5B002C105A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790B51F731B5B002C105A /* ListViewController.swift */; };
+		835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */; };
+		835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */; };
 		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +76,6 @@
 		835790871F72EF39002C105A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8357908B1F73095F002C105A /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		8357908D1F73139D002C105A /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		8357908F1F7313DB002C105A /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		835790911F731426002C105A /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
 		835790921F731426002C105A /* 01n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01n.png; sourceTree = "<group>"; };
 		835790931F731426002C105A /* 02d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02d.png; sourceTree = "<group>"; };
@@ -95,6 +95,8 @@
 		835790A11F731426002C105A /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
 		835790A21F731426002C105A /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50n.png; sourceTree = "<group>"; };
 		835790B51F731B5B002C105A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +169,7 @@
 				835790831F72CF5B002C105A /* JSONParser.swift */,
 				8357908B1F73095F002C105A /* CustomPointAnnotation.swift */,
 				8357908D1F73139D002C105A /* Test.swift */,
-				8357908F1F7313DB002C105A /* CustomAnnotation.swift */,
+				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +179,7 @@
 			children = (
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
 				8357905D1F72CC35002C105A /* Main.storyboard */,
+				835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				835790AF1F731426002C105A /* 11d.png in Resources */,
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
 				835790B21F731426002C105A /* 13n.png in Resources */,
+				835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */,
 				835790B31F731426002C105A /* 50d.png in Resources */,
 				835790A41F731426002C105A /* 01n.png in Resources */,
 				835790611F72CC35002C105A /* Assets.xcassets in Resources */,
@@ -470,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */,
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
@@ -478,7 +483,6 @@
 				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
 				8357908C1F73095F002C105A /* CustomPointAnnotation.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
-				835790901F7313DB002C105A /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
