@@ -1,5 +1,5 @@
 //
-//  ForecastTableViewCell.swift
+//  BookingTableViewCell.swift
 //  SunSeeker
 //
 //  Created by Mike Miksch on 9/21/17.
@@ -8,19 +8,11 @@
 
 import UIKit
 
-class ForecastTableViewCell: UITableViewCell {
+class BookingTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var cellImage: UIImageView!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var weatherLabel: UILabel!
-    
-    var date : Date!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .none
-        dateFormatter.dateStyle = .medium
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

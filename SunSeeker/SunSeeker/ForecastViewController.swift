@@ -61,10 +61,15 @@ class ForecastViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = forecastTable.dequeueReusableCell(withIdentifier: ForecastTableViewCell.identifier, for: indexPath) as! ForecastTableViewCell
         let forecast = self.forecasts[indexPath.row]
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .none
+        dateFormatter.dateStyle = .medium
+        cell.dateLabel.text = dateFormatter.string(from: forecast.date)
+                
         cell.cellImage.image = UIImage(named: "\(forecast.icon).png")
         cell.date = forecast.date
         cell.weatherLabel.text = forecast.description
-        
+
         return cell
     }
     

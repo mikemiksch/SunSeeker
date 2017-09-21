@@ -29,7 +29,6 @@ class JSONParser {
         var forecasts = [Forecast]()
         let json = JSON(data: data)
         let list = Array(json["list"])
-        print(list)
         for forecast in list {
             let newForecast = Forecast(json: forecast.1)
             forecasts.append(newForecast)

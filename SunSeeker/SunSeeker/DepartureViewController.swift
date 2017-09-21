@@ -48,8 +48,8 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func makeDummyFlights() {
-        let currentDate = Date()
-        var departureTime = calendar.date(byAdding: .hour, value: 2, to: currentDate)
+        let currentDate = date
+        var departureTime = calendar.date(byAdding: .hour, value: 2, to: currentDate!)
         var arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
         let carriers = ["Delta", "Southwest", "UnitedAir", "JetBlue", "Virgin"]
         

@@ -116,7 +116,7 @@
         <!--Bookings View Controller-->
         <scene sceneID="5ml-nG-fqL">
             <objects>
-                <viewController id="LpS-jc-btf" customClass="BookingsViewController" customModule="SunSeeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LpS-jc-btf" customClass="BookingsViewController" customModule="SunSeeker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="at4-6C-UIx"/>
                         <viewControllerLayoutGuide type="bottom" id="9wx-yf-dmn"/>
@@ -124,12 +124,24 @@
                     <view key="view" contentMode="scaleToFill" id="a8M-p9-aRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcU-58-W63">
+                                <rect key="frame" x="20" y="86" width="374" height="630"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZcU-58-W63" firstAttribute="leading" secondItem="a8M-p9-aRv" secondAttribute="leadingMargin" id="9DS-K2-Bc1"/>
+                            <constraint firstItem="ZcU-58-W63" firstAttribute="trailing" secondItem="a8M-p9-aRv" secondAttribute="trailingMargin" id="O6D-N3-lRH"/>
+                            <constraint firstItem="ZcU-58-W63" firstAttribute="top" secondItem="at4-6C-UIx" secondAttribute="bottom" constant="22" id="qAs-bt-uS3"/>
+                            <constraint firstItem="9wx-yf-dmn" firstAttribute="top" secondItem="ZcU-58-W63" secondAttribute="bottom" constant="20" id="zpr-3w-m09"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uba-lv-DLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="898"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="897.554347826087"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="4vh-4u-Eyi">

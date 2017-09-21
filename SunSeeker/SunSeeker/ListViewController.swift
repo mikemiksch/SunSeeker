@@ -35,13 +35,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                 destinationController.city = selectedCity
             }
         }
-//        if segue.identifier == DepartureViewController.identifier {
-//            if let selectedIndex = self.cityTable.indexPathForSelectedRow?.row {
-//                let selectedCity = self.cities[selectedIndex]
-//                guard let destinationController = segue.destination as? DepartureViewController else { return }
-//                destinationController.city = selectedCity
-//            }
-//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,7 +54,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: DepartureViewController.identifier, sender: nil)
         self.performSegue(withIdentifier: ForecastViewController.identifier, sender: nil)
     }
 
@@ -69,8 +61,4 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
 // MARK: UIResponder extension
-extension UIResponder {
-    static var identifier : String {
-            return String(describing: self)
-    }
-}
+

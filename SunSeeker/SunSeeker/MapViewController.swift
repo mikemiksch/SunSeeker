@@ -117,8 +117,3 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
 
 }
-
-// MARK: CustomPointAnnotation definition
-class CustomPointAnnotation: MKPointAnnotation {
-    var imageName: String!
-}

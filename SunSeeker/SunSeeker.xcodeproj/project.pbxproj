@@ -50,6 +50,10 @@
 		835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A91F741068005A84E5 /* ForecastViewController.swift */; };
 		83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */; };
 		83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */; };
+		83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */; };
+		83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */; };
+		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
+		83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +106,10 @@
 		835C16A91F741068005A84E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
+		83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
+		83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +167,9 @@
 				835C16A11F736442005A84E5 /* Flight.swift */,
 				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
 				83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */,
+				83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */,
+				83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */,
+				83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 		8357907A1F72CC3E002C105A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */,
 				83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */,
 				835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */,
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
@@ -307,6 +319,7 @@
 				835790A31F731426002C105A /* 01d.png in Resources */,
 				835790A61F731426002C105A /* 02n.png in Resources */,
 				835790AF1F731426002C105A /* 11d.png in Resources */,
+				83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */,
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
 				835790B21F731426002C105A /* 13n.png in Resources */,
 				835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */,
@@ -395,6 +408,7 @@
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
 				835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */,
 				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
+				83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */,
 				835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */,
 				835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */,
 				835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */,
@@ -406,6 +420,8 @@
 				835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
 				835C16A21F736442005A84E5 /* Flight.swift in Sources */,
+				83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */,
+				83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
