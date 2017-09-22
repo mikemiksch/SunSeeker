@@ -14,12 +14,13 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
     var city : City!
     var departureFlight : Flight!
     var flights = [Flight]()
+    var selectedDate : Date!
     let calendar = Calendar.current
 
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
-        self.navigationItem.title = "Return Flights From \(city.name)"
+        self.navigationItem.title = "Return Flights"
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
         self.flightTable.rowHeight = 130
@@ -47,8 +48,8 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func makeDummyFlights() {
-        let currentDate = departureFlight.arrivalTime
-        var departureTime = calendar.date(byAdding: .day, value: 1, to: currentDate)
+        let currentDate = selectedDate
+        var departureTime = calendar.date(byAdding: .hour, value: 1, to: currentDate!)
         var arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
         let carriers = ["Delta", "Southwest", "UnitedAir", "JetBlue", "Virgin"]
         
@@ -65,7 +66,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
             
             flights.append(newFlight)
             
-            departureTime = calendar.date(byAdding: .hour, value: 26, to: departureTime!)
+            departureTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             arrivalTime = calendar.date(byAdding: .hour, value: 2, to: departureTime!)
             
         }

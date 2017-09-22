@@ -65,6 +65,7 @@
 		83C5BBFF1F747844009212D8 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */; };
 		83C5BC001F747844009212D8 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */; };
 		83C5BC011F747844009212D8 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */; };
+		83C5BC031F74A615009212D8 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BC021F74A615009212D8 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +133,7 @@
 		83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
 		83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		83C5BC021F74A615009212D8 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 				835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */,
 				835C169D1F735CC2005A84E5 /* BookingsViewController.swift */,
 				835C16A91F741068005A84E5 /* ForecastViewController.swift */,
+				83C5BC021F74A615009212D8 /* DatePickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				835C16A01F735CE7005A84E5 /* Booking.swift in Sources */,
 				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
+				83C5BC031F74A615009212D8 /* DatePickerViewController.swift in Sources */,
 				835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */,
 				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
 				83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */,

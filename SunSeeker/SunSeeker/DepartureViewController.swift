@@ -37,12 +37,11 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         navigationItem.backBarButtonItem = backButton
-        if segue.identifier == ReturnViewController.identifier {
+        if segue.identifier == DatePickerViewController.identifier {
             if let selectedIndex = self.flightTable.indexPathForSelectedRow?.row {
                 let selectedFlight = self.flights[selectedIndex]
                 
-                guard let destinationController = segue.destination as? ReturnViewController else { return }
-                
+                guard let destinationController = segue.destination as? DatePickerViewController else { return }
                 destinationController.departureFlight = selectedFlight
                 destinationController.city = city
             }
@@ -98,7 +97,7 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: ReturnViewController.identifier, sender: nil)
+        self.performSegue(withIdentifier: DatePickerViewController.identifier, sender: nil)
     }
 
 }
