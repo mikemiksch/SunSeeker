@@ -9,66 +9,71 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Italic.ttf">
+            <string>JosefinSansRegularItalic</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookingTableViewCell" id="KGk-i7-Jjw" customClass="BookingTableViewCell" customModule="SunSeeker" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="181.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departing Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiO-RK-Omf">
-                        <rect key="frame" x="8" y="8" width="123" height="21"/>
+                        <rect key="frame" x="8" y="8" width="129" height="20"/>
+                        <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departing Flight Departure Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43E-zd-mXT">
+                        <rect key="frame" x="8" y="36" width="238" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departing Flight Departure Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43E-zd-mXT">
-                        <rect key="frame" x="8" y="37" width="238" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departing Flight Arrival Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXO-DV-Mzp">
+                        <rect key="frame" x="8" y="65" width="209.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departing Flight Arrival Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXO-DV-Mzp">
-                        <rect key="frame" x="8" y="66" width="209.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Returning Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1H-F8-fzO">
+                        <rect key="frame" x="8" y="110" width="124" height="20"/>
+                        <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Flight Departure Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P6-N3-vel">
+                        <rect key="frame" x="8" y="138" width="213" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1H-F8-fzO">
-                        <rect key="frame" x="8" y="95" width="98" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Flight Departure Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P6-N3-vel">
-                        <rect key="frame" x="8" y="124" width="213" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Flight Arrival Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVr-4r-rlH">
-                        <rect key="frame" x="8" y="153" width="184.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Flight Arrival Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVr-4r-rlH">
+                        <rect key="frame" x="8" y="167" width="184.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="SVr-4r-rlH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7wW-tZ-B8M"/>
-                    <constraint firstItem="TXO-DV-Mzp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="81N-mq-tVF"/>
-                    <constraint firstItem="43E-zd-mXT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BWT-A9-xvd"/>
-                    <constraint firstItem="43E-zd-mXT" firstAttribute="top" secondItem="HiO-RK-Omf" secondAttribute="bottom" constant="8" id="JgO-be-ESF"/>
-                    <constraint firstItem="6P6-N3-vel" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="S7Z-TA-QUW"/>
-                    <constraint firstItem="HiO-RK-Omf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XYP-ru-o4d"/>
-                    <constraint firstItem="TXO-DV-Mzp" firstAttribute="top" secondItem="43E-zd-mXT" secondAttribute="bottom" constant="8" id="gb2-jU-VbM"/>
-                    <constraint firstItem="L1H-F8-fzO" firstAttribute="top" secondItem="TXO-DV-Mzp" secondAttribute="bottom" constant="8" id="nNP-tk-Rww"/>
-                    <constraint firstItem="L1H-F8-fzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oVY-ti-GkZ"/>
-                    <constraint firstItem="SVr-4r-rlH" firstAttribute="top" secondItem="6P6-N3-vel" secondAttribute="bottom" constant="8" id="sOQ-wK-rZo"/>
-                    <constraint firstItem="6P6-N3-vel" firstAttribute="top" secondItem="L1H-F8-fzO" secondAttribute="bottom" constant="8" id="vc8-Pk-GTi"/>
-                    <constraint firstItem="HiO-RK-Omf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xo2-iG-5f5"/>
+                    <constraint firstItem="43E-zd-mXT" firstAttribute="top" secondItem="HiO-RK-Omf" secondAttribute="bottom" constant="8" id="6hJ-VK-Ftm"/>
+                    <constraint firstItem="SVr-4r-rlH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="A6B-NL-SXH"/>
+                    <constraint firstItem="L1H-F8-fzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DCj-Tf-iBa"/>
+                    <constraint firstItem="6P6-N3-vel" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="J1S-Vj-TkQ"/>
+                    <constraint firstItem="6P6-N3-vel" firstAttribute="top" secondItem="L1H-F8-fzO" secondAttribute="bottom" constant="8" id="Jlj-WI-eBX"/>
+                    <constraint firstItem="TXO-DV-Mzp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PUv-aq-wvx"/>
+                    <constraint firstItem="HiO-RK-Omf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dfN-Dk-Ard"/>
+                    <constraint firstItem="TXO-DV-Mzp" firstAttribute="top" secondItem="43E-zd-mXT" secondAttribute="bottom" constant="8" id="hdh-L3-OL0"/>
+                    <constraint firstItem="L1H-F8-fzO" firstAttribute="top" secondItem="TXO-DV-Mzp" secondAttribute="bottom" constant="24" id="hgV-uM-H8E"/>
+                    <constraint firstItem="HiO-RK-Omf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="icT-Vv-CNF"/>
+                    <constraint firstItem="43E-zd-mXT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="l9G-Kx-rYM"/>
+                    <constraint firstItem="SVr-4r-rlH" firstAttribute="top" secondItem="6P6-N3-vel" secondAttribute="bottom" constant="8" id="ucL-cW-fnG"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

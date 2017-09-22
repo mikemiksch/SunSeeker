@@ -12,22 +12,21 @@ class BookingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var bookingsTable: UITableView!
     
     static var fakeFunctionality = [Booking]()
-    
-    var bookings = [Booking]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bookings = BookingsViewController.fakeFunctionality
-        self.navigationItem.title = "Current Itinerary"
+        self.navigationItem.title = "Current Itineraries"
         let bookingCell = UINib(nibName: "BookingTableViewCell", bundle: nil)
         self.bookingsTable.register(bookingCell, forCellReuseIdentifier: BookingTableViewCell.identifier)
-        self.bookingsTable.rowHeight = 200
+        self.bookingsTable.tableFooterView = UIView()
+        self.bookingsTable.rowHeight = 230
         self.bookingsTable.delegate = self
         self.bookingsTable.dataSource = self
+        self.bookingsTable.layer.cornerRadius = 10.0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bookings.count
+        return BookingsViewController.fakeFunctionality.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,13 +36,13 @@ class BookingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = bookingsTable.dequeueReusableCell(withIdentifier: BookingTableViewCell.identifier, for: indexPath) as! BookingTableViewCell
         
-        let booking = self.bookings[indexPath.row]
+        let booking = BookingsViewController.fakeFunctionality[indexPath.row]
         
-        cell.departingFlightDepartureInfoLabel.text = "\(booking.departureFlight.carrier) Flight \(booking.departureFlight.flightNumber) departing \(dateFormatter.string(from: booking.departureFlight.departureTime))"
-        cell.departingFlightArrivalInfoLabel.text = "Arriving at \(dateFormatter.string(from:booking.departureFlight.arrivalTime))"
+        cell.departingFlightDepartureInfoLabel.text = "\(booking.departureFlight.carrier) Flight \(booking.departureFlight.flightNumber)\nDeparting \(dateFormatter.string(from: booking.departureFlight.departureTime))"
+        cell.departingFlightArrivalInfoLabel.text = "Arriving \(dateFormatter.string(from:booking.departureFlight.arrivalTime))"
         
-        cell.returnFlightDepartureInfoLabel.text = "\(booking.returnFlight.carrier) Flight \(booking.departureFlight.flightNumber) departing \(dateFormatter.string(from: booking.returnFlight.departureTime))"
-        cell.returnFlightArrivalInfoLabel.text = "Arriving at \(dateFormatter.string(from:booking.returnFlight.arrivalTime))"
+        cell.returnFlightDepartureInfoLabel.text = "\(booking.returnFlight.carrier) Flight \(booking.departureFlight.flightNumber)\nDeparting \(dateFormatter.string(from: booking.returnFlight.departureTime))"
+        cell.returnFlightArrivalInfoLabel.text = "Arriving \(dateFormatter.string(from:booking.returnFlight.arrivalTime))"
         
         return cell
     }
@@ -55,7 +54,6 @@ class BookingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             BookingsViewController.fakeFunctionality.remove(at: indexPath.row)
-            bookings.remove(at: indexPath.row)
             self.bookingsTable.reloadData()
         }
     }

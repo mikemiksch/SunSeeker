@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Kg-bn-mVm">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -28,22 +28,22 @@
                         <viewControllerLayoutGuide type="bottom" id="Fqb-eZ-Gxh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BoE-Ab-XTW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower-204857" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-vo-Lxc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-wa-mj2">
-                                <rect key="frame" x="16" y="113" width="288" height="347"/>
+                                <rect key="frame" x="20" y="113" width="374" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fAC-Zy-8ed">
-                                <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
                                 <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Day Forecast For" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRI-fa-Jvy">
-                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <rect key="frame" x="20" y="72" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -88,21 +88,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky-183869" translatesAutoresizingMaskIntoConstraints="NO" id="KTT-wP-VdM">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-do-ZlT">
-                                <rect key="frame" x="16" y="83" width="288" height="1255"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-do-ZlT">
+                                <rect key="frame" x="20" y="83" width="374" height="625"/>
                             </mapView>
                             <activityIndicatorView opaque="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-5E-bvP">
-                                <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
                                 <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Qr-s9B">
-                                <rect key="frame" x="698.5" y="428" width="105.5" height="24"/>
+                                <rect key="frame" x="757.33333333333348" y="671.33333333333348" width="136.66666666666663" height="36.666666666666629"/>
                                 <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                 <state key="normal" title="View Destinations">
@@ -114,7 +114,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk0-d4-Tsw">
-                                <rect key="frame" x="-484" y="428" width="105.5" height="24"/>
+                                <rect key="frame" x="-480" y="671.33333333333348" width="136.66666666666669" height="36.666666666666629"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                 <state key="normal" title="View Iteneraries">
@@ -170,19 +170,36 @@
                         <viewControllerLayoutGuide type="bottom" id="9wx-yf-dmn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a8M-p9-aRv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcU-58-W63">
-                                <rect key="frame" x="16" y="86" width="288" height="374"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reed-546250_1920" translatesAutoresizingMaskIntoConstraints="NO" id="Z1f-aI-x2r">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="736"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcU-58-W63">
+                                <rect key="frame" x="20" y="113" width="374" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Itineraries" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-m7-xmP">
+                                <rect key="frame" x="20" y="72" width="374" height="33"/>
+                                <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZcU-58-W63" firstAttribute="leading" secondItem="a8M-p9-aRv" secondAttribute="leadingMargin" id="9DS-K2-Bc1"/>
+                            <constraint firstItem="Z1f-aI-x2r" firstAttribute="leading" secondItem="a8M-p9-aRv" secondAttribute="leading" id="HDn-pf-q0M"/>
+                            <constraint firstItem="9wx-yf-dmn" firstAttribute="top" secondItem="Z1f-aI-x2r" secondAttribute="bottom" id="J2k-R0-VZC"/>
                             <constraint firstItem="ZcU-58-W63" firstAttribute="trailing" secondItem="a8M-p9-aRv" secondAttribute="trailingMargin" id="O6D-N3-lRH"/>
-                            <constraint firstItem="ZcU-58-W63" firstAttribute="top" secondItem="at4-6C-UIx" secondAttribute="bottom" constant="22" id="qAs-bt-uS3"/>
+                            <constraint firstItem="ZcU-58-W63" firstAttribute="top" secondItem="9NY-m7-xmP" secondAttribute="bottom" constant="8" id="Qrg-J2-Mnt"/>
+                            <constraint firstItem="9NY-m7-xmP" firstAttribute="trailing" secondItem="a8M-p9-aRv" secondAttribute="trailingMargin" id="R22-MD-MEq"/>
+                            <constraint firstItem="9NY-m7-xmP" firstAttribute="leading" secondItem="a8M-p9-aRv" secondAttribute="leadingMargin" id="RLg-Cw-JCV"/>
+                            <constraint firstItem="9NY-m7-xmP" firstAttribute="top" secondItem="at4-6C-UIx" secondAttribute="bottom" constant="8" id="X82-XF-RBE"/>
+                            <constraint firstItem="Z1f-aI-x2r" firstAttribute="top" secondItem="a8M-p9-aRv" secondAttribute="top" id="lNK-As-UEW"/>
                             <constraint firstItem="9wx-yf-dmn" firstAttribute="top" secondItem="ZcU-58-W63" secondAttribute="bottom" constant="20" id="zpr-3w-m09"/>
                         </constraints>
                     </view>
@@ -192,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uba-lv-DLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="969"/>
+            <point key="canvasLocation" x="1398.75" y="968.75"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="4vh-4u-Eyi">
@@ -203,18 +220,18 @@
                         <viewControllerLayoutGuide type="bottom" id="TUo-V7-LwJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Abm-Q5-kX3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds-429228" translatesAutoresizingMaskIntoConstraints="NO" id="10y-cQ-Nrg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-6t-o5V">
-                                <rect key="frame" x="16" y="177" width="288" height="283"/>
+                                <rect key="frame" x="20" y="145" width="374" height="571"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;A single sunbeam is enough to drive away many shadows.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-HI-7qS">
-                                <rect key="frame" x="16" y="72" width="288" height="97"/>
+                                <rect key="frame" x="20" y="72" width="374" height="65"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -254,18 +271,18 @@
                         <viewControllerLayoutGuide type="bottom" id="G3U-Ff-d1T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Oc5-Sl-wkD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air-2716_1280" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-15-aW7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wit-xs-wbf">
-                                <rect key="frame" x="16" y="113" width="288" height="347"/>
+                                <rect key="frame" x="20" y="113" width="374" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IS-HI-ODM">
-                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <rect key="frame" x="20" y="72" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -307,14 +324,14 @@
                         <viewControllerLayoutGuide type="bottom" id="mWl-e5-lTv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Quf-vf-LyG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach-1367282" translatesAutoresizingMaskIntoConstraints="NO" id="in7-34-EOZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Return Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deZ-kh-yeS">
-                                <rect key="frame" x="16" y="171.5" width="288" height="33"/>
+                                <rect key="frame" x="20" y="299.66666666666669" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -322,7 +339,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcn-Qu-Tuf">
-                                <rect key="frame" x="16" y="212.5" width="288" height="55"/>
+                                <rect key="frame" x="63" y="340.66666666666669" width="288" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Ye8-e2-Rz3"/>
@@ -330,7 +347,7 @@
                                 </constraints>
                             </view>
                             <datePicker multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a0a-i8-hrv">
-                                <rect key="frame" x="0.0" y="212.5" width="320" height="55"/>
+                                <rect key="frame" x="47" y="340.66666666666669" width="320" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="KA2-lx-Ec1"/>
                                 </constraints>
@@ -339,7 +356,7 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-lR-Scx">
-                                <rect key="frame" x="16.5" y="276" width="288" height="29"/>
+                                <rect key="frame" x="63.666666666666657" y="532" width="288" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                 <state key="normal" title="See Return Flights"/>
@@ -387,18 +404,18 @@
                         <viewControllerLayoutGuide type="bottom" id="syQ-ua-6xS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0fw-qJ-1yf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun-1580522" translatesAutoresizingMaskIntoConstraints="NO" id="mf6-hx-fFa">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky-1599469_1920" translatesAutoresizingMaskIntoConstraints="NO" id="mf6-hx-fFa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6gy-pW-JGe">
-                                <rect key="frame" x="16" y="113" width="288" height="347"/>
+                                <rect key="frame" x="20" y="113" width="374" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights From" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE4-ik-BHe">
-                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <rect key="frame" x="20" y="72" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -440,11 +457,11 @@
                         <viewControllerLayoutGuide type="bottom" id="kye-Yg-jjN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dsd-HQ-Ymb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean-828774" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-EE-btv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwh-Iz-KeS">
                                 <rect key="frame" x="14" y="112" width="111" height="21"/>
@@ -477,13 +494,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcP-nY-0y3">
-                                <rect key="frame" x="14" y="72" width="206.5" height="32"/>
+                                <rect key="frame" x="14" y="72" width="206.66666666666666" height="32"/>
                                 <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTn-sd-ZCo">
-                                <rect key="frame" x="14" y="316" width="291" height="29"/>
+                                <rect key="frame" x="61.666666666666657" y="316" width="291" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Djv-qh-JTI"/>
@@ -534,7 +551,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Kg-bn-mVm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ACN-i1-lS5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ACN-i1-lS5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -554,7 +571,8 @@
         <image name="clouds-429228" width="5184" height="3456"/>
         <image name="flower-204857" width="3648" height="2736"/>
         <image name="ocean-828774" width="3212" height="2409"/>
+        <image name="reed-546250_1920" width="1920" height="1275"/>
+        <image name="sky-1599469_1920" width="1920" height="1280"/>
         <image name="sky-183869" width="2992" height="2992"/>
-        <image name="sun-1580522" width="4356" height="2452"/>
     </resources>
 </document>
