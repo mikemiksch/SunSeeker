@@ -55,6 +55,16 @@
 		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
 		83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */; };
 		83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */; };
+		83C5BBF81F747844009212D8 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */; };
+		83C5BBF91F747844009212D8 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */; };
+		83C5BBFA1F747844009212D8 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */; };
+		83C5BBFB1F747844009212D8 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */; };
+		83C5BBFC1F747844009212D8 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */; };
+		83C5BBFD1F747844009212D8 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */; };
+		83C5BBFE1F747844009212D8 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */; };
+		83C5BBFF1F747844009212D8 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */; };
+		83C5BC001F747844009212D8 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */; };
+		83C5BC011F747844009212D8 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +122,16 @@
 		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
 		83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookings.xcdatamodel; sourceTree = "<group>"; };
+		83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
+		83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
+		83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
+		83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
+		83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
+		83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,17 +179,14 @@
 		835790791F72CC3D002C105A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83C5BBEB1F746DDA009212D8 /* Cells */,
 				835790591F72CC35002C105A /* AppDelegate.swift */,
 				835C16A71F740AC5005A84E5 /* Forecast.swift */,
 				8357907F1F72CEA9002C105A /* API.swift */,
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
-				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
 				835C169F1F735CE7005A84E5 /* Booking.swift */,
 				835C16A11F736442005A84E5 /* Flight.swift */,
-				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
-				83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */,
-				83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */,
 				83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */,
 				83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */,
 			);
@@ -206,6 +223,30 @@
 		8357907C1F72CC3E002C105A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				83C5BBED1F7477F1009212D8 /* JoseFin-sans */,
+				83C5BBEC1F7477DE009212D8 /* weather icons */,
+				8357907D1F72CE2A002C105A /* keys.plist */,
+				835790651F72CC35002C105A /* Info.plist */,
+				835790601F72CC35002C105A /* Assets.xcassets */,
+				83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		83C5BBEB1F746DDA009212D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */,
+				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
+				83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */,
+				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		83C5BBEC1F7477DE009212D8 /* weather icons */ = {
+			isa = PBXGroup;
+			children = (
 				835790911F731426002C105A /* 01d.png */,
 				835790921F731426002C105A /* 01n.png */,
 				835790931F731426002C105A /* 02d.png */,
@@ -224,12 +265,25 @@
 				835790A01F731426002C105A /* 13n.png */,
 				835790A11F731426002C105A /* 50d.png */,
 				835790A21F731426002C105A /* 50n.png */,
-				8357907D1F72CE2A002C105A /* keys.plist */,
-				835790651F72CC35002C105A /* Info.plist */,
-				835790601F72CC35002C105A /* Assets.xcassets */,
-				83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */,
 			);
-			name = Support;
+			name = "weather icons";
+			sourceTree = "<group>";
+		};
+		83C5BBED1F7477F1009212D8 /* JoseFin-sans */ = {
+			isa = PBXGroup;
+			children = (
+				83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */,
+				83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */,
+				83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */,
+				83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */,
+				83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */,
+				83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */,
+				83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */,
+				83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */,
+				83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */,
+				83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */,
+			);
+			name = "JoseFin-sans";
 			sourceTree = "<group>";
 		};
 		BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */ = {
@@ -315,6 +369,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C5BBF81F747844009212D8 /* JosefinSans-Bold.ttf in Resources */,
+				83C5BBF91F747844009212D8 /* JosefinSans-BoldItalic.ttf in Resources */,
+				83C5BBFA1F747844009212D8 /* JosefinSans-Italic.ttf in Resources */,
+				83C5BBFB1F747844009212D8 /* JosefinSans-Light.ttf in Resources */,
+				83C5BBFC1F747844009212D8 /* JosefinSans-LightItalic.ttf in Resources */,
+				83C5BBFD1F747844009212D8 /* JosefinSans-Regular.ttf in Resources */,
+				83C5BBFE1F747844009212D8 /* JosefinSans-SemiBold.ttf in Resources */,
+				83C5BBFF1F747844009212D8 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
+				83C5BC001F747844009212D8 /* JosefinSans-Thin.ttf in Resources */,
+				83C5BC011F747844009212D8 /* JosefinSans-ThinItalic.ttf in Resources */,
 				835790AA1F731426002C105A /* 04n.png in Resources */,
 				835790A71F731426002C105A /* 03d.png in Resources */,
 				835790A91F731426002C105A /* 04d.png in Resources */,

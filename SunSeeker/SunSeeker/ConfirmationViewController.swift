@@ -17,6 +17,8 @@ class ConfirmationViewController: UIViewController {
     @IBOutlet weak var departingFlightArrivalInfoLabel: UILabel!
     
     @IBAction func confirmButtonPressed(_ sender: Any) {
+        let newBooking = Booking(departure: departureFlight, returning: returnFlight)
+        BookingsViewController.fakeFunctionality.append(newBooking)
         self.navigationController?.popToRootViewController(animated: true)
         presentAlert()
     }

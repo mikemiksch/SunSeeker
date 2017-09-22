@@ -10,6 +10,10 @@ import UIKit
 
 class BookingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var departingFlightDepartureInfoLabel: UILabel!
+    @IBOutlet weak var departingFlightArrivalInfoLabel: UILabel!
+    @IBOutlet weak var returnFlightDepartureInfoLabel: UILabel!
+    @IBOutlet weak var returnFlightArrivalInfoLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
