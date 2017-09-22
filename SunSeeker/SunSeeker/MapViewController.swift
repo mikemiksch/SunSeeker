@@ -10,9 +10,15 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
-
+    
+    @IBOutlet weak var listButton: UIButton!
+    @IBOutlet weak var bookingsButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherMap: MKMapView!
+    
+    @IBOutlet weak var listButtonTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bookingButtonLeadingConstraint: NSLayoutConstraint!
+
     @IBAction func listButtonPressed(_ sender: Any) {
     }
     
@@ -29,33 +35,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "SunSeeker"
         self.activityIndicator.startAnimating()
-        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
-        let span = MKCoordinateSpanMake(3, 3)
-        let region = MKCoordinateRegionMake(center, span)
-        weatherMap.setRegion(region, animated: true)
-        weatherMap.delegate = self
-        weatherMap.showsUserLocation = true
-        
-        locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
-            locationManager.startUpdatingLocation()
-            let currentCoordinates = locationManager.location?.coordinate
-            MapViewController.userLocation = CLLocation(latitude: (currentCoordinates?.latitude)!, longitude: (currentCoordinates?.longitude)!)
-        } else {
-            MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
-        }
-        
-        
+        applyFormatting()
+        mapSetup()
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
                 self.cities = cities ?? []
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
+                self.animations()
             }
         })
         
@@ -114,6 +102,46 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         annotationView!.image = UIImage(named: "\(customAnnotation.imageName!).png")
         
         return annotationView
+    }
+    
+    func applyFormatting() {
+        self.navigationItem.title = "SunSeeker"
+        weatherMap.layer.cornerRadius = 25.0
+        listButton.layer.cornerRadius = 10.0
+        bookingsButton.layer.cornerRadius = 10.0
+        listButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        listButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
+        bookingsButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        bookingsButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
+    }
+    
+    func animations() {
+        UIView.animate(withDuration: 1.0, animations: {
+            self.bookingButtonLeadingConstraint.constant = 0
+            self.listButtonTrailingConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func mapSetup() {
+        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
+        let span = MKCoordinateSpanMake(3, 3)
+        let region = MKCoordinateRegionMake(center, span)
+        weatherMap.setRegion(region, animated: true)
+        weatherMap.delegate = self
+        weatherMap.showsUserLocation = true
+        
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+            locationManager.startUpdatingLocation()
+            let currentCoordinates = locationManager.location?.coordinate
+            MapViewController.userLocation = CLLocation(latitude: (currentCoordinates?.latitude)!, longitude: (currentCoordinates?.longitude)!)
+        } else {
+            MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
+        }
     }
 
 }

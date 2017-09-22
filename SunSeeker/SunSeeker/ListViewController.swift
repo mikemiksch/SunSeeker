@@ -21,6 +21,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.cityTable.rowHeight = 80
         self.cityTable.delegate = self
         self.cityTable.dataSource = self
+        self.cityTable.layer.cornerRadius = 10.0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
