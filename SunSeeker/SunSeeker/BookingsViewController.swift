@@ -54,8 +54,17 @@ class BookingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            BookingsViewController.fakeFunctionality.remove(at: indexPath.row)
-            self.bookingsTable.reloadData()
+            let alertController = UIAlertController(title: nil, message: "Cancel these reservations?", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel Bookings", style: .destructive, handler: { (action) in
+                BookingsViewController.fakeFunctionality.remove(at: indexPath.row)
+                self.bookingsTable.reloadData()
+            })
+            alertController.addAction(cancelAction)
+            
+            let keepAction = UIAlertAction(title: "Keep Bookings", style: .default, handler: nil)
+            alertController.addAction(keepAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
 
