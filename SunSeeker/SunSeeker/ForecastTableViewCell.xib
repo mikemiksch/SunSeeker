@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,12 +54,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="et7-hK-lii" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="1UP-ry-eM1"/>
-                    <constraint firstAttribute="trailing" secondItem="PaS-uN-7Jv" secondAttribute="trailing" constant="17" id="3Fg-Uj-2H4"/>
                     <constraint firstItem="Z8M-Zl-HAy" firstAttribute="top" secondItem="UG3-ON-oaT" secondAttribute="bottom" constant="4" id="C5f-Ca-rqS"/>
                     <constraint firstItem="MFp-dr-Lq5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Dw3-6e-pEK"/>
                     <constraint firstItem="MFp-dr-Lq5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G60-gS-KHb"/>
                     <constraint firstItem="Z8M-Zl-HAy" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="LNo-3O-aXS"/>
                     <constraint firstItem="PaS-uN-7Jv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="U2d-L8-yle"/>
+                    <constraint firstItem="PaS-uN-7Jv" firstAttribute="centerX" secondItem="et7-hK-lii" secondAttribute="centerX" id="UdD-v7-zrg"/>
                     <constraint firstItem="et7-hK-lii" firstAttribute="top" secondItem="PaS-uN-7Jv" secondAttribute="bottom" constant="4" id="ciQ-TN-lem"/>
                     <constraint firstItem="UG3-ON-oaT" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="km2-nG-azC"/>
                     <constraint firstItem="UG3-ON-oaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="oAa-TW-ROs"/>
