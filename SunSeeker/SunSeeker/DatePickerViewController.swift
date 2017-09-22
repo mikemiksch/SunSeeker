@@ -10,6 +10,8 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
     
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var backdrop: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
     var departureFlight : Flight!
     var city : City!
@@ -18,6 +20,8 @@ class DatePickerViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Return Date"
         self.datePicker.minimumDate = Date()
+        self.backdrop.layer.cornerRadius = 10.0
+        self.button.layer.cornerRadius = 10.0
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
