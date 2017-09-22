@@ -28,25 +28,42 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG3-ON-oaT">
-                        <rect key="frame" x="88" y="8" width="36" height="21"/>
+                        <rect key="frame" x="88" y="16" width="36" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-Zl-HAy">
-                        <rect key="frame" x="88" y="29" width="64.5" height="21"/>
+                        <rect key="frame" x="88" y="41" width="64.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Flights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et7-hK-lii">
+                        <rect key="frame" x="263" y="46" width="48.5" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane-png-27932" translatesAutoresizingMaskIntoConstraints="NO" id="PaS-uN-7Jv">
+                        <rect key="frame" x="271" y="10" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="GSz-Ya-7NA"/>
+                            <constraint firstAttribute="height" constant="32" id="akd-jP-AbJ"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="top" secondItem="UG3-ON-oaT" secondAttribute="bottom" id="2xf-4e-hjq"/>
+                    <constraint firstItem="et7-hK-lii" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="1UP-ry-eM1"/>
+                    <constraint firstAttribute="trailing" secondItem="PaS-uN-7Jv" secondAttribute="trailing" constant="17" id="3Fg-Uj-2H4"/>
+                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="top" secondItem="UG3-ON-oaT" secondAttribute="bottom" constant="4" id="C5f-Ca-rqS"/>
                     <constraint firstItem="MFp-dr-Lq5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Dw3-6e-pEK"/>
                     <constraint firstItem="MFp-dr-Lq5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G60-gS-KHb"/>
-                    <constraint firstItem="UG3-ON-oaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Py2-9K-efV"/>
-                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="WZN-Jp-LVs"/>
-                    <constraint firstItem="UG3-ON-oaT" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="enQ-I5-H15"/>
+                    <constraint firstItem="Z8M-Zl-HAy" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="LNo-3O-aXS"/>
+                    <constraint firstItem="PaS-uN-7Jv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="U2d-L8-yle"/>
+                    <constraint firstItem="et7-hK-lii" firstAttribute="top" secondItem="PaS-uN-7Jv" secondAttribute="bottom" constant="4" id="ciQ-TN-lem"/>
+                    <constraint firstItem="UG3-ON-oaT" firstAttribute="leading" secondItem="MFp-dr-Lq5" secondAttribute="trailing" constant="8" id="km2-nG-azC"/>
+                    <constraint firstItem="UG3-ON-oaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="oAa-TW-ROs"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -56,4 +73,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="airplane-png-27932" width="1926" height="1967"/>
+    </resources>
 </document>

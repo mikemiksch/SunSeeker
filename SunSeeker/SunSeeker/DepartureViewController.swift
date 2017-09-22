@@ -10,6 +10,7 @@ import UIKit
 
 class DepartureViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var flightsToLabel: UILabel!
     @IBOutlet weak var flightTable: UITableView!
     var date : Date!
     var city : City!
@@ -18,11 +19,12 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Flights to \(city.name)"
-        
+        self.navigationItem.title = "Outbound Flights"
+        self.flightsToLabel.text = "Flights to \n\(city.name)"
+        self.flightTable.layer.cornerRadius = 10.0
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
-        self.flightTable.rowHeight = 150
+        self.flightTable.rowHeight = 130
         self.flightTable.delegate = self
         self.flightTable.dataSource = self
         
@@ -57,8 +59,8 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
             let newFlight = Flight()
             let randomNum = Int(arc4random_uniform(5))
             newFlight.carrier = carriers[randomNum]
-            newFlight.departureAirport = "SeaTac"
-            newFlight.arrivalAirport = city.name
+            newFlight.departureAirport = "From SeaTac Airport"
+            newFlight.arrivalAirport = "At \(city.name) Airport"
             newFlight.gate = Int(arc4random_uniform(50)) + 1
             newFlight.flightNumber = Int(arc4random_uniform(1000)) + 1
             newFlight.departureTime = departureTime!
@@ -90,6 +92,7 @@ class DepartureViewController: UIViewController, UITableViewDataSource, UITableV
         cell.arrivalLabel.text = flight.arrivalAirport
         cell.departureTimeLabel.text = dateFormatter.string(from: flight.departureTime)
         cell.arrivialTimeLabel.text = dateFormatter.string(from: flight.arrivalTime)
+        cell.extraLabel.text = "Select Return Date"
         
         return cell
     }

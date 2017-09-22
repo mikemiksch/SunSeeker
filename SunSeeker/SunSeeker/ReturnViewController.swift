@@ -22,7 +22,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
         self.navigationItem.title = "Return Flights From \(city.name)"
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
-        self.flightTable.rowHeight = 150
+        self.flightTable.rowHeight = 130
         self.flightTable.delegate = self
         self.flightTable.dataSource = self
         
@@ -56,8 +56,8 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
             let newFlight = Flight()
             let randomNum = Int(arc4random_uniform(5))
             newFlight.carrier = carriers[randomNum]
-            newFlight.departureAirport = city.name
-            newFlight.arrivalAirport = "SeaTac"
+            newFlight.departureAirport = "From \(city.name) Airport"
+            newFlight.arrivalAirport = "At SeaTac Airport"
             newFlight.gate = Int(arc4random_uniform(50)) + 1
             newFlight.flightNumber = Int(arc4random_uniform(1000)) + 1
             newFlight.departureTime = departureTime!

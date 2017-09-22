@@ -10,6 +10,7 @@ import UIKit
 
 class FlightTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var extraLabel: UILabel!
     @IBOutlet weak var flightNumberLabel: UILabel!
     @IBOutlet weak var departureLabel: UILabel!
     @IBOutlet weak var carrierLabel: UILabel!

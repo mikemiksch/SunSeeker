@@ -14,6 +14,9 @@
         <array key="JosefinSans-Bold.ttf">
             <string>JosefinSans-Bold</string>
         </array>
+        <array key="JosefinSans-Italic.ttf">
+            <string>JosefinSansRegularItalic</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Forecast View Controller-->
@@ -28,34 +31,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-wa-mj2">
-                                <rect key="frame" x="16" y="86" width="288" height="374"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower-204857" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-vo-Lxc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-wa-mj2">
+                                <rect key="frame" x="16" y="113" width="288" height="347"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fAC-Zy-8ed">
                                 <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
                                 <color key="color" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Day Forecast For" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRI-fa-Jvy">
+                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xxK-wa-mj2" firstAttribute="top" secondItem="wjD-9H-xtn" secondAttribute="bottom" constant="22" id="DDQ-8n-d5d"/>
+                            <constraint firstItem="QZ0-vo-Lxc" firstAttribute="leading" secondItem="BoE-Ab-XTW" secondAttribute="leading" id="4Qq-71-BOX"/>
                             <constraint firstItem="xxK-wa-mj2" firstAttribute="leading" secondItem="BoE-Ab-XTW" secondAttribute="leadingMargin" id="Dwo-Ek-r9i"/>
                             <constraint firstItem="xxK-wa-mj2" firstAttribute="trailing" secondItem="BoE-Ab-XTW" secondAttribute="trailingMargin" id="Led-z7-JfA"/>
+                            <constraint firstItem="Fqb-eZ-Gxh" firstAttribute="top" secondItem="QZ0-vo-Lxc" secondAttribute="bottom" id="M9l-ey-eJj"/>
+                            <constraint firstItem="LRI-fa-Jvy" firstAttribute="top" secondItem="wjD-9H-xtn" secondAttribute="bottom" constant="8" id="VLu-S6-jEh"/>
+                            <constraint firstItem="LRI-fa-Jvy" firstAttribute="trailing" secondItem="BoE-Ab-XTW" secondAttribute="trailingMargin" id="bv7-H4-L2L"/>
                             <constraint firstItem="fAC-Zy-8ed" firstAttribute="centerX" secondItem="BoE-Ab-XTW" secondAttribute="centerX" id="imv-oy-p9a"/>
+                            <constraint firstItem="LRI-fa-Jvy" firstAttribute="leading" secondItem="BoE-Ab-XTW" secondAttribute="leadingMargin" id="krn-5q-SHd"/>
+                            <constraint firstItem="xxK-wa-mj2" firstAttribute="top" secondItem="LRI-fa-Jvy" secondAttribute="bottom" constant="8" id="n2B-Gt-UyX"/>
+                            <constraint firstItem="QZ0-vo-Lxc" firstAttribute="top" secondItem="BoE-Ab-XTW" secondAttribute="top" id="o2y-iB-W22"/>
                             <constraint firstItem="Fqb-eZ-Gxh" firstAttribute="top" secondItem="xxK-wa-mj2" secondAttribute="bottom" constant="20" id="qqy-qA-i1O"/>
                             <constraint firstItem="fAC-Zy-8ed" firstAttribute="centerY" secondItem="BoE-Ab-XTW" secondAttribute="centerY" id="xwQ-Uq-S75"/>
+                            <constraint firstAttribute="trailing" secondItem="QZ0-vo-Lxc" secondAttribute="trailing" id="zj6-8e-64S"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="fAC-Zy-8ed" id="bqw-F5-hhD"/>
                         <outlet property="forecastTable" destination="xxK-wa-mj2" id="NFg-2f-dDX"/>
+                        <outlet property="titleLabel" destination="LRI-fa-Jvy" id="D30-E0-6mY"/>
                         <segue destination="GUh-xD-z4J" kind="show" identifier="DepartureViewController" id="5AZ-PB-ozC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4k-m5-zo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730.434782608696" y="138.58695652173915"/>
+            <point key="canvasLocation" x="3067.5" y="-660"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -81,7 +103,7 @@
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Qr-s9B">
                                 <rect key="frame" x="698.5" y="428" width="105.5" height="24"/>
-                                <color key="backgroundColor" red="1" green="0.856201171875" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
                                 <state key="normal" title="View Destinations">
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uba-lv-DLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="897.554347826087"/>
+            <point key="canvasLocation" x="1399" y="969"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="4vh-4u-Eyi">
@@ -188,16 +210,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-6t-o5V">
-                                <rect key="frame" x="16" y="83" width="288" height="377"/>
+                                <rect key="frame" x="16" y="177" width="288" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;A single sunbeam is enough to drive away many shadows.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-HI-7qS">
+                                <rect key="frame" x="16" y="72" width="288" height="97"/>
+                                <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="tdl-HI-7qS" firstAttribute="top" secondItem="TX2-HB-nBQ" secondAttribute="bottom" constant="8" id="4jP-Em-FXx"/>
                             <constraint firstAttribute="trailing" secondItem="10y-cQ-Nrg" secondAttribute="trailing" id="6Pd-Rc-BIK"/>
+                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="top" secondItem="tdl-HI-7qS" secondAttribute="bottom" constant="8" id="8cd-o0-yBa"/>
                             <constraint firstItem="TUo-V7-LwJ" firstAttribute="top" secondItem="Q1d-6t-o5V" secondAttribute="bottom" constant="20" id="D2G-ui-tZy"/>
+                            <constraint firstItem="tdl-HI-7qS" firstAttribute="leading" secondItem="Abm-Q5-kX3" secondAttribute="leadingMargin" id="Mfq-mO-5Tx"/>
                             <constraint firstItem="Q1d-6t-o5V" firstAttribute="leading" secondItem="Abm-Q5-kX3" secondAttribute="leadingMargin" id="RiL-jW-JSy"/>
+                            <constraint firstItem="tdl-HI-7qS" firstAttribute="trailing" secondItem="Abm-Q5-kX3" secondAttribute="trailingMargin" id="TxT-tH-aQM"/>
                             <constraint firstItem="10y-cQ-Nrg" firstAttribute="top" secondItem="Abm-Q5-kX3" secondAttribute="top" id="ZVa-4R-ITx"/>
-                            <constraint firstItem="Q1d-6t-o5V" firstAttribute="top" secondItem="TX2-HB-nBQ" secondAttribute="bottom" constant="19" id="mna-pU-Wnr"/>
                             <constraint firstItem="10y-cQ-Nrg" firstAttribute="leading" secondItem="Abm-Q5-kX3" secondAttribute="leading" id="s6L-Yb-oBk"/>
                             <constraint firstItem="Q1d-6t-o5V" firstAttribute="trailing" secondItem="Abm-Q5-kX3" secondAttribute="trailingMargin" id="xnv-bm-MDZ"/>
                             <constraint firstItem="TUo-V7-LwJ" firstAttribute="top" secondItem="10y-cQ-Nrg" secondAttribute="bottom" id="ykU-8d-SO0"/>
@@ -210,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofj-hh-3IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="-658"/>
+            <point key="canvasLocation" x="2214.375" y="-660"/>
         </scene>
         <!--Departure View Controller-->
         <scene sceneID="QtR-5w-T9C">
@@ -224,27 +257,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wit-xs-wbf">
-                                <rect key="frame" x="16" y="87" width="288" height="373"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air-2716_1280" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-15-aW7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wit-xs-wbf">
+                                <rect key="frame" x="16" y="113" width="288" height="347"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IS-HI-ODM">
+                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wit-xs-wbf" firstAttribute="trailing" secondItem="Oc5-Sl-wkD" secondAttribute="trailingMargin" id="6cm-aI-r6X"/>
-                            <constraint firstItem="wit-xs-wbf" firstAttribute="top" secondItem="5sN-Fr-HFF" secondAttribute="bottom" constant="23" id="HFD-uR-E6S"/>
+                            <constraint firstItem="nFM-15-aW7" firstAttribute="top" secondItem="Oc5-Sl-wkD" secondAttribute="top" id="Gdz-ok-mbR"/>
+                            <constraint firstAttribute="trailing" secondItem="nFM-15-aW7" secondAttribute="trailing" id="Usw-xF-AO2"/>
+                            <constraint firstItem="nFM-15-aW7" firstAttribute="leading" secondItem="Oc5-Sl-wkD" secondAttribute="leading" id="XvJ-sf-Mh1"/>
                             <constraint firstItem="wit-xs-wbf" firstAttribute="leading" secondItem="Oc5-Sl-wkD" secondAttribute="leadingMargin" id="d57-g7-G1X"/>
+                            <constraint firstItem="4IS-HI-ODM" firstAttribute="top" secondItem="5sN-Fr-HFF" secondAttribute="bottom" constant="8" id="eq0-2z-QGJ"/>
+                            <constraint firstItem="G3U-Ff-d1T" firstAttribute="top" secondItem="nFM-15-aW7" secondAttribute="bottom" id="gHZ-J3-Ej8"/>
+                            <constraint firstItem="wit-xs-wbf" firstAttribute="top" secondItem="4IS-HI-ODM" secondAttribute="bottom" constant="8" id="rr1-06-gcI"/>
+                            <constraint firstItem="4IS-HI-ODM" firstAttribute="trailing" secondItem="Oc5-Sl-wkD" secondAttribute="trailingMargin" id="wYx-6a-pZW"/>
+                            <constraint firstItem="4IS-HI-ODM" firstAttribute="leading" secondItem="Oc5-Sl-wkD" secondAttribute="leadingMargin" id="xQm-VF-Uam"/>
                             <constraint firstItem="G3U-Ff-d1T" firstAttribute="top" secondItem="wit-xs-wbf" secondAttribute="bottom" constant="20" id="xV1-Aw-WwG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="flightTable" destination="wit-xs-wbf" id="NRR-CE-dUw"/>
+                        <outlet property="flightsToLabel" destination="4IS-HI-ODM" id="Cu2-Mg-hiw"/>
                         <segue destination="ZAe-oE-Ph9" kind="show" identifier="ReturnViewController" id="D6x-Po-9aU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vah-4I-a4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3564" y="139"/>
+            <point key="canvasLocation" x="4014.375" y="-660"/>
         </scene>
         <!--Return View Controller-->
         <scene sceneID="A4v-Km-SIl">
@@ -278,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4c4-am-Kag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4446" y="139"/>
+            <point key="canvasLocation" x="4862" y="-659"/>
         </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="885-sF-o7u">
@@ -377,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umy-IK-4W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5331.884057971015" y="138.58695652173915"/>
+            <point key="canvasLocation" x="5721" y="-660"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3e5-p6-t94">
@@ -399,7 +451,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="air-2716_1280" width="1280" height="853"/>
         <image name="clouds-429228" width="5184" height="3456"/>
+        <image name="flower-204857" width="3648" height="2736"/>
         <image name="sky-183869" width="2992" height="2992"/>
     </resources>
 </document>

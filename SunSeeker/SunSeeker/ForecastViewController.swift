@@ -10,6 +10,7 @@ import UIKit
 
 class ForecastViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var forecastTable: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -22,7 +23,10 @@ class ForecastViewController: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Forecast for \(city.name)"
+        self.navigationItem.title = "Forecast"
+        self.titleLabel.text = "5 Day Forecast for \n\(city.name)"
+        self.forecastTable.tableFooterView = UIView()
+        self.forecastTable.layer.cornerRadius = 10.0
         self.activityIndicator.startAnimating()
         let forecastCell = UINib(nibName: "ForecastTableViewCell", bundle: nil)
         self.forecastTable.register(forecastCell, forCellReuseIdentifier: ForecastTableViewCell.identifier)
