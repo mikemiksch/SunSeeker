@@ -15,6 +15,7 @@ class ConfirmationViewController: UIViewController {
     @IBOutlet weak var returnFlightDepartureInfoLabel: UILabel!
     @IBOutlet weak var departingFlightDepartureInfoLabel: UILabel!
     @IBOutlet weak var departingFlightArrivalInfoLabel: UILabel!
+    @IBOutlet weak var confirmButton: UIButton!
     
     @IBAction func confirmButtonPressed(_ sender: Any) {
         let newBooking = Booking(departure: departureFlight, returning: returnFlight)
@@ -28,15 +29,16 @@ class ConfirmationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Confirm Booking"
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .short
+        self.confirmButton.layer.cornerRadius = 10.0
+        self.departingFlightDepartureInfoLabel.text = "\(departureFlight.carrier) Flight \(departureFlight.flightNumber)\nDeparting \(dateFormatter.string(from: departureFlight.departureTime))"
+        self.departingFlightArrivalInfoLabel.text = "Arriving \(dateFormatter.string(from:departureFlight.arrivalTime))"
         
-        self.departingFlightDepartureInfoLabel.text = "\(departureFlight.carrier) Flight \(departureFlight.flightNumber) departing \(dateFormatter.string(from: departureFlight.departureTime))"
-        self.departingFlightArrivalInfoLabel.text = "Arriving at \(dateFormatter.string(from:departureFlight.arrivalTime))"
-        
-        self.returnFlightDepartureInfoLabel.text = "\(returnFlight.carrier) Flight \(departureFlight.flightNumber) departing \(dateFormatter.string(from: returnFlight.departureTime))"
-        self.returnFlightArrivalInfoLabel.text = "Arriving at \(dateFormatter.string(from:returnFlight.arrivalTime))"
+        self.returnFlightDepartureInfoLabel.text = "\(returnFlight.carrier) Flight \(departureFlight.flightNumber)\nDeparting \(dateFormatter.string(from: returnFlight.departureTime))"
+        self.returnFlightArrivalInfoLabel.text = "Arriving \(dateFormatter.string(from:returnFlight.arrivalTime))"
     }
     
     func presentAlert() {
@@ -46,23 +48,25 @@ class ConfirmationViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func save() {
-        guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let managedContext = delegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Bookings", in: managedContext)!
-        let newBooking = NSManagedObject(entity: entity, insertInto: managedContext)
-        
-        newBooking.setValue(departureFlight, forKeyPath: "departureFlight")
-        newBooking.setValue(returnFlight, forKeyPath: "returnFlight")
-        
-        do {
-            try managedContext.save()
-        } catch let error as NSError {
-            print("Could not save. \(error.description)")
-        }
-    }
+//   Ran out of time trying to get CoreData or iCloud implemented to persist itinerary data between sessions of the app  
+//
+//    func save() {
+//        guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//        
+//        let managedContext = delegate.persistentContainer.viewContext
+//        let entity = NSEntityDescription.entity(forEntityName: "Bookings", in: managedContext)!
+//        let newBooking = NSManagedObject(entity: entity, insertInto: managedContext)
+//        
+//        newBooking.setValue(departureFlight, forKeyPath: "departureFlight")
+//        newBooking.setValue(returnFlight, forKeyPath: "returnFlight")
+//        
+//        do {
+//            try managedContext.save()
+//        } catch let error as NSError {
+//            print("Could not save. \(error.description)")
+//        }
+//    }
 
 }
