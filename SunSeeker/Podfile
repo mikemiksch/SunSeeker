@@ -7,9 +7,4 @@ target 'SunSeeker' do
   pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
   # Pods for SunSeeker
 
-  target 'SunSeekerTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

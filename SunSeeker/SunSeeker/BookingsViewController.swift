@@ -11,6 +11,7 @@ import UIKit
 class BookingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var bookingsTable: UITableView!
     
+    // Ran out of time trying to implement either local storage or iCloud functionality to persist the bookings beyond sessions of the app, so I faked it to simulate the functionality.
     static var fakeFunctionality = [Booking]()
 
     override func viewDidLoad() {

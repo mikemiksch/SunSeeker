@@ -36,8 +36,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activityIndicator.startAnimating()
-        applyFormatting()
         mapSetup()
+        applyFormatting()
         API.shared.fetchData(callback: { (cities) in
             OperationQueue.main.addOperation {
                 self.cities = cities ?? []
@@ -137,8 +137,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
             locationManager.startUpdatingLocation()
-            let currentCoordinates = locationManager.location?.coordinate
-            MapViewController.userLocation = CLLocation(latitude: (currentCoordinates?.latitude)!, longitude: (currentCoordinates?.longitude)!)
+            if let currentCoordinates = locationManager.location?.coordinate {
+                MapViewController.userLocation = CLLocation(latitude: (currentCoordinates.latitude), longitude: (currentCoordinates.longitude))
+            }
         } else {
             MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
         }
