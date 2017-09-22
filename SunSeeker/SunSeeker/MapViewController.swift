@@ -22,7 +22,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBAction func listButtonPressed(_ sender: Any) {
     }
     
-    static var userLocation = CLLocation()
+    static var centerPoint = CLLocation(latitude: 47.6062, longitude: -122.3321)
 
     
     let locationManager = CLLocationManager()
@@ -84,7 +84,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is CustomPointAnnotation) {
-            print("Not a valid CustomPointAnnotation registration")
             return nil
         }
         
@@ -137,11 +136,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
             locationManager.startUpdatingLocation()
-            if let currentCoordinates = locationManager.location?.coordinate {
-                MapViewController.userLocation = CLLocation(latitude: (currentCoordinates.latitude), longitude: (currentCoordinates.longitude))
-            }
-        } else {
-            MapViewController.userLocation = CLLocation(latitude: 47.6062, longitude: -122.3321)
         }
     }
 

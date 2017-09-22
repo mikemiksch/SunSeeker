@@ -18,7 +18,8 @@ struct API {
     let apiKey = AppDelegate.valueForAPIKey(keyName: "APIKey")
     mutating func fetchData(callback: @escaping CitiesCallback) {
         
-        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-138.855508,36.385968,-105.720743,59.017976,10&cnt=50&APPID=\(apiKey)") else { return }
+        // Calling API on a bounding box drawn around a 750mile radius
+        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-132,37.105,-112,57,10&cnt=50&APPID=\(apiKey)") else { return }
         
         URLSession.shared.dataTask(with: callURL) { (data, response, error) in
             
@@ -40,6 +41,8 @@ struct API {
     }
     
     func fetchForecast(cityID: Int, callback: @escaping ForecastCallback) {
+        
+        // Calling API on 5 day forecase for a specific city
         guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/forecast/daily?id=\(cityID)&APPID=\(apiKey)") else { return }
         
         URLSession.shared.dataTask(with: callURL) { (data, response, error) in

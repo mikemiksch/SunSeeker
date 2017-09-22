@@ -18,7 +18,7 @@ class City {
     let description : String
     let icon : String
     var rank : String
-    let distance : Double
+    let distance : Int
     
     init(json: JSON) {
         self.name = json["name"].string ?? ""
@@ -31,7 +31,7 @@ class City {
         if rank.characters.contains("n") {
             rank = "9" + rank
         }
-        self.distance = round((((coor.distance(from: MapViewController.userLocation)) * 0.000621371) * 1000) / 1000)
+        self.distance = Int(round((((coor.distance(from: MapViewController.centerPoint)) * 0.000621371) * 1000) / 1000))
     }
 }
 
