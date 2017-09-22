@@ -390,27 +390,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6gy-pW-JGe">
-                                <rect key="frame" x="16" y="88" width="288" height="372"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun-1580522" translatesAutoresizingMaskIntoConstraints="NO" id="mf6-hx-fFa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6gy-pW-JGe">
+                                <rect key="frame" x="16" y="113" width="288" height="347"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights From" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE4-ik-BHe">
+                                <rect key="frame" x="16" y="72" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="JosefinSansRegularItalic" family="Josefin Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6gy-pW-JGe" firstAttribute="top" secondItem="b7h-3f-pjX" secondAttribute="bottom" constant="24" id="76E-Iz-ew5"/>
+                            <constraint firstItem="DE4-ik-BHe" firstAttribute="top" secondItem="b7h-3f-pjX" secondAttribute="bottom" constant="8" id="8ic-Vw-OxF"/>
                             <constraint firstItem="syQ-ua-6xS" firstAttribute="top" secondItem="6gy-pW-JGe" secondAttribute="bottom" constant="20" id="CiG-WV-17Y"/>
+                            <constraint firstAttribute="trailing" secondItem="mf6-hx-fFa" secondAttribute="trailing" id="GQX-qG-95X"/>
+                            <constraint firstItem="DE4-ik-BHe" firstAttribute="leading" secondItem="0fw-qJ-1yf" secondAttribute="leadingMargin" id="XxN-2p-F6T"/>
+                            <constraint firstItem="syQ-ua-6xS" firstAttribute="top" secondItem="mf6-hx-fFa" secondAttribute="bottom" id="YPw-gr-QpQ"/>
                             <constraint firstItem="6gy-pW-JGe" firstAttribute="leading" secondItem="0fw-qJ-1yf" secondAttribute="leadingMargin" id="ZPX-oF-VDP"/>
                             <constraint firstItem="6gy-pW-JGe" firstAttribute="trailing" secondItem="0fw-qJ-1yf" secondAttribute="trailingMargin" id="ZoG-t5-DoL"/>
+                            <constraint firstItem="mf6-hx-fFa" firstAttribute="leading" secondItem="0fw-qJ-1yf" secondAttribute="leading" id="bUh-Js-i3G"/>
+                            <constraint firstItem="mf6-hx-fFa" firstAttribute="top" secondItem="0fw-qJ-1yf" secondAttribute="top" id="n88-yZ-Tlv"/>
+                            <constraint firstItem="DE4-ik-BHe" firstAttribute="trailing" secondItem="0fw-qJ-1yf" secondAttribute="trailingMargin" id="qK3-Em-9TC"/>
+                            <constraint firstItem="6gy-pW-JGe" firstAttribute="top" secondItem="DE4-ik-BHe" secondAttribute="bottom" constant="8" id="xec-pI-Ec8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="flightTable" destination="6gy-pW-JGe" id="HE3-ZK-gdc"/>
+                        <outlet property="flightsLabel" destination="DE4-ik-BHe" id="bVq-bc-BaT"/>
                         <segue destination="onJ-LF-xwA" kind="show" identifier="ConfirmationViewController" id="egf-0B-S8N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4c4-am-Kag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5625" y="138"/>
+            <point key="canvasLocation" x="5625" y="137.5"/>
         </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="885-sF-o7u">
@@ -536,5 +555,6 @@
         <image name="clouds-429228" width="5184" height="3456"/>
         <image name="flower-204857" width="3648" height="2736"/>
         <image name="sky-183869" width="2992" height="2992"/>
+        <image name="sun-1580522" width="4356" height="2452"/>
     </resources>
 </document>

@@ -19,7 +19,9 @@ class DatePickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Return Date"
-        self.datePicker.minimumDate = Date()
+        let calendar = Calendar.current
+        let minimumDate = calendar.date(byAdding: .day, value: 1, to: Date())
+        self.datePicker.minimumDate = minimumDate
         self.backdrop.layer.cornerRadius = 10.0
         self.button.layer.cornerRadius = 10.0
     }

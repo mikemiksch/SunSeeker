@@ -9,6 +9,7 @@
 import UIKit
 
 class ReturnViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var flightsLabel: UILabel!
     
     @IBOutlet weak var flightTable: UITableView!
     var city : City!
@@ -21,6 +22,8 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         super.viewDidLoad()
         self.navigationItem.title = "Return Flights"
+        self.flightsLabel.text = "Flights From \n\(city.name)"
+        self.flightTable.layer.cornerRadius = 10.0
         let flightNib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         self.flightTable.register(flightNib, forCellReuseIdentifier: FlightTableViewCell.identifier)
         self.flightTable.rowHeight = 130
@@ -92,6 +95,7 @@ class ReturnViewController: UIViewController, UITableViewDataSource, UITableView
         cell.arrivalLabel.text = flight.arrivalAirport
         cell.departureTimeLabel.text = dateFormatter.string(from: flight.departureTime)
         cell.arrivialTimeLabel.text = dateFormatter.string(from: flight.arrivalTime)
+        cell.extraLabel.text = "Confirm Booking"
         
         return cell
     }
