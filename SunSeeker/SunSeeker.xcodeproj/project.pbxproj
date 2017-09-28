@@ -45,13 +45,10 @@
 		835C16A01F735CE7005A84E5 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169F1F735CE7005A84E5 /* Booking.swift */; };
 		835C16A21F736442005A84E5 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A11F736442005A84E5 /* Flight.swift */; };
 		835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */; };
-		835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */; };
 		835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A71F740AC5005A84E5 /* Forecast.swift */; };
 		835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A91F741068005A84E5 /* ForecastViewController.swift */; };
 		83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */; };
-		83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */; };
 		83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */; };
-		83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */; };
 		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
 		83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */; };
 		83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */; };
@@ -113,13 +110,10 @@
 		835C169F1F735CE7005A84E5 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		835C16A11F736442005A84E5 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
-		835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
 		835C16A71F740AC5005A84E5 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		835C16A91F741068005A84E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
-		83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
 		83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
-		83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
 		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
 		83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookings.xcdatamodel; sourceTree = "<group>"; };
@@ -198,9 +192,6 @@
 		8357907A1F72CC3E002C105A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */,
-				83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */,
-				835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */,
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
 				8357905D1F72CC35002C105A /* Main.storyboard */,
 				835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */,
@@ -389,11 +380,9 @@
 				835790A31F731426002C105A /* 01d.png in Resources */,
 				835790A61F731426002C105A /* 02n.png in Resources */,
 				835790AF1F731426002C105A /* 11d.png in Resources */,
-				83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */,
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
 				835790B21F731426002C105A /* 13n.png in Resources */,
 				835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */,
-				83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */,
 				835790B31F731426002C105A /* 50d.png in Resources */,
 				835790A41F731426002C105A /* 01n.png in Resources */,
 				835790611F72CC35002C105A /* Assets.xcassets in Resources */,
@@ -401,7 +390,6 @@
 				835790AD1F731426002C105A /* 10d.png in Resources */,
 				835790B11F731426002C105A /* 13d.png in Resources */,
 				835790B01F731426002C105A /* 11n.png in Resources */,
-				835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */,
 				835790AC1F731426002C105A /* 09n.png in Resources */,
 				835790B41F731426002C105A /* 50n.png in Resources */,
 				835790A81F731426002C105A /* 03n.png in Resources */,
