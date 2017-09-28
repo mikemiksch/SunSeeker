@@ -18,8 +18,14 @@ struct API {
     let apiKey = AppDelegate.valueForAPIKey(keyName: "APIKey")
     mutating func fetchData(callback: @escaping CitiesCallback) {
         
+        let lat = MapViewController.userLocation.coordinate.latitude
+        print(lat)
+        let long = MapViewController.userLocation.coordinate.longitude
+        print(long)
         // Calling API on a bounding box drawn around a 750mile radius
-        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-132,37.105,-112,57,10&cnt=50&APPID=\(apiKey)") else { return }
+//        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/box/city?bbox=-132,37.105,-112,57,10&cnt=50&APPID=\(apiKey)") else { return }
+        
+        guard let callURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(long)&APPID=\(apiKey)") else { return }
         
         URLSession.shared.dataTask(with: callURL) { (data, response, error) in
             

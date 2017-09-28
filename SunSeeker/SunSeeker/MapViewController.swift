@@ -35,15 +35,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.activityIndicator.startAnimating()
         mapSetup()
         applyFormatting()
-//        API.shared.fetchData(callback: { (cities) in
-//            OperationQueue.main.addOperation {
-//                self.cities = cities ?? []
-//                self.activityIndicator.stopAnimating()
-//                self.activityIndicator.isHidden = true
-//                self.animations()
-//            }
-//        })
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -117,10 +108,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func mapSetup() {
-//        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
-//        let span = MKCoordinateSpanMake(3, 3)
-//        let region = MKCoordinateRegionMake(center, span)
-//        weatherMap.setRegion(region, animated: true)
         weatherMap.delegate = self
         weatherMap.showsUserLocation = true
         
@@ -128,10 +115,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.startUpdatingLocation()
-        
-        if CLLocationManager.locationServicesEnabled() {
-
-        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -145,6 +128,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
+            print(MapViewController.userLocation)
             let userCoordinate = CLLocationCoordinate2DMake(MapViewController.userLocation.coordinate.latitude, MapViewController.userLocation.coordinate.longitude)
             let span = MKCoordinateSpanMake(3, 3)
             let region = MKCoordinateRegionMake(userCoordinate, span)
