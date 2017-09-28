@@ -52,31 +52,19 @@
                                     <segue destination="HVC-p5-QUB" kind="show" identifier="ListViewController" id="VJp-cR-6Y1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk0-d4-Tsw">
-                                <rect key="frame" x="-480" y="671.33333333333348" width="136.66666666666669" height="36.666666666666629"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="15"/>
-                                <state key="normal" title="View Iteneraries">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Hk0-d4-Tsw" firstAttribute="width" secondItem="52K-Qr-s9B" secondAttribute="width" id="2Qj-Rh-9AA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KTT-wP-VdM" secondAttribute="bottom" id="65m-Ih-Yrd"/>
                             <constraint firstItem="KTT-wP-VdM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6h4-TN-o0s"/>
                             <constraint firstItem="7x0-do-ZlT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ANc-n4-YEt"/>
                             <constraint firstItem="2mn-5E-bvP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BHL-ai-3fL"/>
                             <constraint firstItem="52K-Qr-s9B" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="Df9-Cc-9ro"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="52K-Qr-s9B" secondAttribute="bottom" constant="28" id="DmF-qb-7Jf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hk0-d4-Tsw" secondAttribute="bottom" constant="28" id="FXu-av-loD"/>
-                            <constraint firstItem="Hk0-d4-Tsw" firstAttribute="height" secondItem="52K-Qr-s9B" secondAttribute="height" id="IiZ-n9-azf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7x0-do-ZlT" secondAttribute="bottom" constant="28" id="L3o-fS-ENc"/>
                             <constraint firstItem="7x0-do-ZlT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LOf-Wf-QGj"/>
                             <constraint firstItem="2mn-5E-bvP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NXn-BN-0Qh"/>
                             <constraint firstItem="KTT-wP-VdM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ooh-as-jBk"/>
-                            <constraint firstItem="Hk0-d4-Tsw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-500" id="YYA-ks-p8S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="52K-Qr-s9B" secondAttribute="trailing" constant="-500" id="hjK-fi-rCT"/>
                             <constraint firstItem="52K-Qr-s9B" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="l4u-yR-m3G"/>
                             <constraint firstAttribute="trailing" secondItem="KTT-wP-VdM" secondAttribute="trailing" id="mdK-IZ-bN1"/>
@@ -86,8 +74,6 @@
                     <navigationItem key="navigationItem" id="TMK-ah-lam"/>
                     <connections>
                         <outlet property="activityIndicator" destination="2mn-5E-bvP" id="k3H-RA-cT2"/>
-                        <outlet property="bookingButtonLeadingConstraint" destination="YYA-ks-p8S" id="sm7-sS-saP"/>
-                        <outlet property="bookingsButton" destination="Hk0-d4-Tsw" id="RVE-uj-Kr5"/>
                         <outlet property="listButton" destination="52K-Qr-s9B" id="lQv-y2-efa"/>
                         <outlet property="listButtonTrailingConstraint" destination="hjK-fi-rCT" id="sMv-wj-Ru1"/>
                         <outlet property="weatherMap" destination="7x0-do-ZlT" id="aA4-cJ-MoI"/>

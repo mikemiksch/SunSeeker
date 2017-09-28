@@ -12,21 +12,18 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
     
     @IBOutlet weak var listButton: UIButton!
-    @IBOutlet weak var bookingsButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherMap: MKMapView!
     
     @IBOutlet weak var listButtonTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var bookingButtonLeadingConstraint: NSLayoutConstraint!
 
     @IBAction func listButtonPressed(_ sender: Any) {
     }
     
-    static var centerPoint = CLLocation(latitude: 47.6062, longitude: -122.3321)
+    static var userLocation = CLLocation()
 
     
     let locationManager = CLLocationManager()
-    var forecasts = [Forecast]()
     var cities = [City]() {
         didSet {
             addAnnotations()
@@ -38,14 +35,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.activityIndicator.startAnimating()
         mapSetup()
         applyFormatting()
-        API.shared.fetchData(callback: { (cities) in
-            OperationQueue.main.addOperation {
-                self.cities = cities ?? []
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.isHidden = true
-                self.animations()
-            }
-        })
+//        API.shared.fetchData(callback: { (cities) in
+//            OperationQueue.main.addOperation {
+//                self.cities = cities ?? []
+//                self.activityIndicator.stopAnimating()
+//                self.activityIndicator.isHidden = true
+//                self.animations()
+//            }
+//        })
         
     }
     
@@ -107,35 +104,67 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.navigationItem.title = "SunSeeker"
         weatherMap.layer.cornerRadius = 25.0
         listButton.layer.cornerRadius = 10.0
-        bookingsButton.layer.cornerRadius = 10.0
         listButton.titleLabel?.adjustsFontSizeToFitWidth = true
         listButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
-        bookingsButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        bookingsButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
+
     }
     
     func animations() {
         UIView.animate(withDuration: 1.0, animations: {
-            self.bookingButtonLeadingConstraint.constant = 0
             self.listButtonTrailingConstraint.constant = 0
             self.view.layoutIfNeeded()
         })
     }
     
     func mapSetup() {
-        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
-        let span = MKCoordinateSpanMake(3, 3)
-        let region = MKCoordinateRegionMake(center, span)
-        weatherMap.setRegion(region, animated: true)
+//        let center = CLLocationCoordinate2DMake(47.6062, -122.3321)
+//        let span = MKCoordinateSpanMake(3, 3)
+//        let region = MKCoordinateRegionMake(center, span)
+//        weatherMap.setRegion(region, animated: true)
         weatherMap.delegate = self
         weatherMap.showsUserLocation = true
         
         locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.startUpdatingLocation()
         
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
-            locationManager.startUpdatingLocation()
+
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        MapViewController.userLocation = locations[0]
+        let userCoordinate = CLLocationCoordinate2DMake(MapViewController.userLocation.coordinate.latitude, MapViewController.userLocation.coordinate.longitude)
+        let span = MKCoordinateSpanMake(3, 3)
+        let region = MKCoordinateRegionMake(userCoordinate, span)
+        weatherMap.setRegion(region, animated: true)
+        self.weatherMap.showsUserLocation = true
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == CLAuthorizationStatus.authorizedWhenInUse {
+            let userCoordinate = CLLocationCoordinate2DMake(MapViewController.userLocation.coordinate.latitude, MapViewController.userLocation.coordinate.longitude)
+            let span = MKCoordinateSpanMake(3, 3)
+            let region = MKCoordinateRegionMake(userCoordinate, span)
+            weatherMap.setRegion(region, animated: true)
+            self.weatherMap.showsUserLocation = true
+            API.shared.fetchData(callback: { (cities) in
+                OperationQueue.main.addOperation {
+                    self.cities = cities ?? []
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.isHidden = true
+                    self.animations()
+                }
+            })
+        } else if status == CLAuthorizationStatus.denied {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            let alert = UIAlertController(title: nil, message: "Please enable location services to use SunSeeker", preferredStyle: .alert)
+            let okay = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okay)
+            self.present(alert, animated: true, completion: nil)
         }
     }
 

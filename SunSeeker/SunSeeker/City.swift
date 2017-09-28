@@ -31,7 +31,8 @@ class City {
         if rank.characters.contains("n") {
             rank = "9" + rank
         }
-        self.distance = Int(round((((coor.distance(from: MapViewController.centerPoint)) * 0.000621371) * 1000) / 1000))
+        let location = CLLocation(latitude: MapViewController.userLocation.coordinate.latitude, longitude: MapViewController.userLocation.coordinate.longitude)
+        self.distance = Int(round((((coor.distance(from: location)) * 0.000621371) * 1000) / 1000))
     }
 }
 

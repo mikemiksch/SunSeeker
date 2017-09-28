@@ -47,6 +47,7 @@
 		835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */; };
 		835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A71F740AC5005A84E5 /* Forecast.swift */; };
 		835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A91F741068005A84E5 /* ForecastViewController.swift */; };
+		839361861F7D7A4B00F5AEF5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839361851F7D7A4B00F5AEF5 /* CoreLocation.framework */; };
 		83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */; };
 		83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */; };
 		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
@@ -112,6 +113,7 @@
 		835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
 		835C16A71F740AC5005A84E5 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		835C16A91F741068005A84E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		839361851F7D7A4B00F5AEF5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
 		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839361861F7D7A4B00F5AEF5 /* CoreLocation.framework in Frameworks */,
 				1DE5394BBDBB13B17D0D9CFB /* Pods_SunSeeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +286,7 @@
 		BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				839361851F7D7A4B00F5AEF5 /* CoreLocation.framework */,
 				70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */,
 				3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */,
 			);
