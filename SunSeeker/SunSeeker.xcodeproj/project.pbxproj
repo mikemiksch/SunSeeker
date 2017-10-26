@@ -9,27 +9,64 @@
 /* Begin PBXBuildFile section */
 		1DE5394BBDBB13B17D0D9CFB /* Pods_SunSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */; };
 		8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790591F72CC35002C105A /* AppDelegate.swift */; };
-		8357905C1F72CC35002C105A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357905B1F72CC35002C105A /* ViewController.swift */; };
 		8357905F1F72CC35002C105A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8357905D1F72CC35002C105A /* Main.storyboard */; };
 		835790611F72CC35002C105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835790601F72CC35002C105A /* Assets.xcassets */; };
 		835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835790621F72CC35002C105A /* LaunchScreen.storyboard */; };
-		8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357906E1F72CC35002C105A /* SunSeekerTests.swift */; };
 		8357907E1F72CE2A002C105A /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8357907D1F72CE2A002C105A /* keys.plist */; };
 		835790801F72CEA9002C105A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357907F1F72CEA9002C105A /* API.swift */; };
 		835790821F72CEF6002C105A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790811F72CEF6002C105A /* City.swift */; };
 		835790841F72CF5B002C105A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790831F72CF5B002C105A /* JSONParser.swift */; };
-		873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315C7137060948442C3686A /* Pods_SunSeekerTests.framework */; };
+		835790881F72EF39002C105A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790871F72EF39002C105A /* MapViewController.swift */; };
+		835790A31F731426002C105A /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790911F731426002C105A /* 01d.png */; };
+		835790A41F731426002C105A /* 01n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790921F731426002C105A /* 01n.png */; };
+		835790A51F731426002C105A /* 02d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790931F731426002C105A /* 02d.png */; };
+		835790A61F731426002C105A /* 02n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790941F731426002C105A /* 02n.png */; };
+		835790A71F731426002C105A /* 03d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790951F731426002C105A /* 03d.png */; };
+		835790A81F731426002C105A /* 03n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790961F731426002C105A /* 03n.png */; };
+		835790A91F731426002C105A /* 04d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790971F731426002C105A /* 04d.png */; };
+		835790AA1F731426002C105A /* 04n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790981F731426002C105A /* 04n.png */; };
+		835790AB1F731426002C105A /* 09d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790991F731426002C105A /* 09d.png */; };
+		835790AC1F731426002C105A /* 09n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909A1F731426002C105A /* 09n.png */; };
+		835790AD1F731426002C105A /* 10d.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909B1F731426002C105A /* 10d.png */; };
+		835790AE1F731426002C105A /* 10n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909C1F731426002C105A /* 10n.png */; };
+		835790AF1F731426002C105A /* 11d.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909D1F731426002C105A /* 11d.png */; };
+		835790B01F731426002C105A /* 11n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909E1F731426002C105A /* 11n.png */; };
+		835790B11F731426002C105A /* 13d.png in Resources */ = {isa = PBXBuildFile; fileRef = 8357909F1F731426002C105A /* 13d.png */; };
+		835790B21F731426002C105A /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A01F731426002C105A /* 13n.png */; };
+		835790B31F731426002C105A /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A11F731426002C105A /* 50d.png */; };
+		835790B41F731426002C105A /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = 835790A21F731426002C105A /* 50n.png */; };
+		835790B61F731B5B002C105A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835790B51F731B5B002C105A /* ListViewController.swift */; };
+		835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */; };
+		835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */; };
+		835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16971F735C5E005A84E5 /* DepartureViewController.swift */; };
+		835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16991F735C74005A84E5 /* ReturnViewController.swift */; };
+		835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */; };
+		835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169D1F735CC2005A84E5 /* BookingsViewController.swift */; };
+		835C16A01F735CE7005A84E5 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C169F1F735CE7005A84E5 /* Booking.swift */; };
+		835C16A21F736442005A84E5 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A11F736442005A84E5 /* Flight.swift */; };
+		835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */; };
+		835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */; };
+		835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A71F740AC5005A84E5 /* Forecast.swift */; };
+		835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C16A91F741068005A84E5 /* ForecastViewController.swift */; };
+		83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */; };
+		83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */; };
+		83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */; };
+		83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */; };
+		83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */; };
+		83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */; };
+		83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */; };
+		83C5BBF81F747844009212D8 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */; };
+		83C5BBF91F747844009212D8 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */; };
+		83C5BBFA1F747844009212D8 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */; };
+		83C5BBFB1F747844009212D8 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */; };
+		83C5BBFC1F747844009212D8 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */; };
+		83C5BBFD1F747844009212D8 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */; };
+		83C5BBFE1F747844009212D8 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */; };
+		83C5BBFF1F747844009212D8 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */; };
+		83C5BC001F747844009212D8 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */; };
+		83C5BC011F747844009212D8 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */; };
+		83C5BC031F74A615009212D8 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C5BC021F74A615009212D8 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8357906B1F72CC35002C105A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8357904E1F72CC35002C105A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 835790551F72CC35002C105A;
-			remoteInfo = SunSeeker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeekerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,18 +76,64 @@
 		70D70E169F78AB08B8CD9DF9 /* Pods_SunSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790561F72CC35002C105A /* SunSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835790591F72CC35002C105A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8357905B1F72CC35002C105A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8357905E1F72CC35002C105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		835790601F72CC35002C105A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835790631F72CC35002C105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835790651F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8357906A1F72CC35002C105A /* SunSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8357906E1F72CC35002C105A /* SunSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSeekerTests.swift; sourceTree = "<group>"; };
-		835790701F72CC35002C105A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8357907D1F72CE2A002C105A /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		8357907F1F72CEA9002C105A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		835790811F72CEF6002C105A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		835790831F72CF5B002C105A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		835790871F72EF39002C105A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		835790911F731426002C105A /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
+		835790921F731426002C105A /* 01n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01n.png; sourceTree = "<group>"; };
+		835790931F731426002C105A /* 02d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02d.png; sourceTree = "<group>"; };
+		835790941F731426002C105A /* 02n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02n.png; sourceTree = "<group>"; };
+		835790951F731426002C105A /* 03d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03d.png; sourceTree = "<group>"; };
+		835790961F731426002C105A /* 03n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03n.png; sourceTree = "<group>"; };
+		835790971F731426002C105A /* 04d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04d.png; sourceTree = "<group>"; };
+		835790981F731426002C105A /* 04n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04n.png; sourceTree = "<group>"; };
+		835790991F731426002C105A /* 09d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 09d.png; sourceTree = "<group>"; };
+		8357909A1F731426002C105A /* 09n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 09n.png; sourceTree = "<group>"; };
+		8357909B1F731426002C105A /* 10d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10d.png; sourceTree = "<group>"; };
+		8357909C1F731426002C105A /* 10n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10n.png; sourceTree = "<group>"; };
+		8357909D1F731426002C105A /* 11d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11d.png; sourceTree = "<group>"; };
+		8357909E1F731426002C105A /* 11n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11n.png; sourceTree = "<group>"; };
+		8357909F1F731426002C105A /* 13d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13d.png; sourceTree = "<group>"; };
+		835790A01F731426002C105A /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13n.png; sourceTree = "<group>"; };
+		835790A11F731426002C105A /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
+		835790A21F731426002C105A /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50n.png; sourceTree = "<group>"; };
+		835790B51F731B5B002C105A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		835C16971F735C5E005A84E5 /* DepartureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureViewController.swift; sourceTree = "<group>"; };
+		835C16991F735C74005A84E5 /* ReturnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnViewController.swift; sourceTree = "<group>"; };
+		835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		835C169D1F735CC2005A84E5 /* BookingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		835C169F1F735CE7005A84E5 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		835C16A11F736442005A84E5 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
+		835C16A71F740AC5005A84E5 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		835C16A91F741068005A84E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
+		83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Identifier.swift"; sourceTree = "<group>"; };
+		83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookings.xcdatamodel; sourceTree = "<group>"; };
+		83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
+		83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
+		83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
+		83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
+		83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
+		83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		83C5BC021F74A615009212D8 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		8A81E923D45AA1E53FF9DEA7 /* Pods-SunSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunSeeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunSeeker/Pods-SunSeeker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,14 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		835790671F72CC35002C105A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873AF076982A1E49A40B57FD /* Pods_SunSeekerTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				835790581F72CC35002C105A /* SunSeeker */,
-				8357906D1F72CC35002C105A /* SunSeekerTests */,
 				835790571F72CC35002C105A /* Products */,
 				D0C1FCE285A2CE1D099DC261 /* Pods */,
 				BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */,
@@ -89,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				835790561F72CC35002C105A /* SunSeeker.app */,
-				8357906A1F72CC35002C105A /* SunSeekerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,22 +178,19 @@
 			path = SunSeeker;
 			sourceTree = "<group>";
 		};
-		8357906D1F72CC35002C105A /* SunSeekerTests */ = {
-			isa = PBXGroup;
-			children = (
-				8357906E1F72CC35002C105A /* SunSeekerTests.swift */,
-				835790701F72CC35002C105A /* Info.plist */,
-			);
-			path = SunSeekerTests;
-			sourceTree = "<group>";
-		};
 		835790791F72CC3D002C105A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83C5BBEB1F746DDA009212D8 /* Cells */,
 				835790591F72CC35002C105A /* AppDelegate.swift */,
+				835C16A71F740AC5005A84E5 /* Forecast.swift */,
 				8357907F1F72CEA9002C105A /* API.swift */,
 				835790811F72CEF6002C105A /* City.swift */,
 				835790831F72CF5B002C105A /* JSONParser.swift */,
+				835C169F1F735CE7005A84E5 /* Booking.swift */,
+				835C16A11F736442005A84E5 /* Flight.swift */,
+				83A606581F742E8700AEAA28 /* UIResponder+Identifier.swift */,
+				83A6065A1F742ED800AEAA28 /* CustomPointAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -128,8 +198,12 @@
 		8357907A1F72CC3E002C105A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83A606551F7425A800AEAA28 /* BookingTableViewCell.xib */,
+				83A606511F7413B100AEAA28 /* ForecastTableViewCell.xib */,
+				835C16A41F736EA2005A84E5 /* FlightTableViewCell.xib */,
 				835790621F72CC35002C105A /* LaunchScreen.storyboard */,
 				8357905D1F72CC35002C105A /* Main.storyboard */,
+				835C16941F733AB1005A84E5 /* WeatherTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -137,7 +211,14 @@
 		8357907B1F72CC3E002C105A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8357905B1F72CC35002C105A /* ViewController.swift */,
+				835790871F72EF39002C105A /* MapViewController.swift */,
+				835790B51F731B5B002C105A /* ListViewController.swift */,
+				835C16971F735C5E005A84E5 /* DepartureViewController.swift */,
+				835C16991F735C74005A84E5 /* ReturnViewController.swift */,
+				835C169B1F735C84005A84E5 /* ConfirmationViewController.swift */,
+				835C169D1F735CC2005A84E5 /* BookingsViewController.swift */,
+				835C16A91F741068005A84E5 /* ForecastViewController.swift */,
+				83C5BC021F74A615009212D8 /* DatePickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -145,11 +226,67 @@
 		8357907C1F72CC3E002C105A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				83C5BBED1F7477F1009212D8 /* JoseFin-sans */,
+				83C5BBEC1F7477DE009212D8 /* weather icons */,
 				8357907D1F72CE2A002C105A /* keys.plist */,
 				835790651F72CC35002C105A /* Info.plist */,
 				835790601F72CC35002C105A /* Assets.xcassets */,
+				83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		83C5BBEB1F746DDA009212D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83A606541F7425A800AEAA28 /* BookingTableViewCell.swift */,
+				835C16A31F736EA2005A84E5 /* FlightTableViewCell.swift */,
+				83A606501F7413B100AEAA28 /* ForecastTableViewCell.swift */,
+				835C16931F733AB1005A84E5 /* WeatherTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		83C5BBEC1F7477DE009212D8 /* weather icons */ = {
+			isa = PBXGroup;
+			children = (
+				835790911F731426002C105A /* 01d.png */,
+				835790921F731426002C105A /* 01n.png */,
+				835790931F731426002C105A /* 02d.png */,
+				835790941F731426002C105A /* 02n.png */,
+				835790951F731426002C105A /* 03d.png */,
+				835790961F731426002C105A /* 03n.png */,
+				835790971F731426002C105A /* 04d.png */,
+				835790981F731426002C105A /* 04n.png */,
+				835790991F731426002C105A /* 09d.png */,
+				8357909A1F731426002C105A /* 09n.png */,
+				8357909B1F731426002C105A /* 10d.png */,
+				8357909C1F731426002C105A /* 10n.png */,
+				8357909D1F731426002C105A /* 11d.png */,
+				8357909E1F731426002C105A /* 11n.png */,
+				8357909F1F731426002C105A /* 13d.png */,
+				835790A01F731426002C105A /* 13n.png */,
+				835790A11F731426002C105A /* 50d.png */,
+				835790A21F731426002C105A /* 50n.png */,
+			);
+			name = "weather icons";
+			sourceTree = "<group>";
+		};
+		83C5BBED1F7477F1009212D8 /* JoseFin-sans */ = {
+			isa = PBXGroup;
+			children = (
+				83C5BBEE1F74780A009212D8 /* JosefinSans-Bold.ttf */,
+				83C5BBEF1F74780A009212D8 /* JosefinSans-BoldItalic.ttf */,
+				83C5BBF01F74780A009212D8 /* JosefinSans-Italic.ttf */,
+				83C5BBF11F74780A009212D8 /* JosefinSans-Light.ttf */,
+				83C5BBF21F74780A009212D8 /* JosefinSans-LightItalic.ttf */,
+				83C5BBF31F74780A009212D8 /* JosefinSans-Regular.ttf */,
+				83C5BBF41F74780A009212D8 /* JosefinSans-SemiBold.ttf */,
+				83C5BBF51F74780A009212D8 /* JosefinSans-SemiBoldItalic.ttf */,
+				83C5BBF61F74780A009212D8 /* JosefinSans-Thin.ttf */,
+				83C5BBF71F74780A009212D8 /* JosefinSans-ThinItalic.ttf */,
+			);
+			name = "JoseFin-sans";
 			sourceTree = "<group>";
 		};
 		BB1D6FF0B4A0A80DFEDCDF85 /* Frameworks */ = {
@@ -195,27 +332,6 @@
 			productReference = 835790561F72CC35002C105A /* SunSeeker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		835790691F72CC35002C105A /* SunSeekerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */;
-			buildPhases = (
-				451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */,
-				835790661F72CC35002C105A /* Sources */,
-				835790671F72CC35002C105A /* Frameworks */,
-				835790681F72CC35002C105A /* Resources */,
-				EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */,
-				BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8357906C1F72CC35002C105A /* PBXTargetDependency */,
-			);
-			name = SunSeekerTests;
-			productName = SunSeekerTests;
-			productReference = 8357906A1F72CC35002C105A /* SunSeekerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,12 +346,6 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = HDU39LZWX7;
 						ProvisioningStyle = Automatic;
-					};
-					835790691F72CC35002C105A = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = HDU39LZWX7;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 835790551F72CC35002C105A;
 					};
 				};
 			};
@@ -253,7 +363,6 @@
 			projectRoot = "";
 			targets = (
 				835790551F72CC35002C105A /* SunSeeker */,
-				835790691F72CC35002C105A /* SunSeekerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,41 +372,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C5BBF81F747844009212D8 /* JosefinSans-Bold.ttf in Resources */,
+				83C5BBF91F747844009212D8 /* JosefinSans-BoldItalic.ttf in Resources */,
+				83C5BBFA1F747844009212D8 /* JosefinSans-Italic.ttf in Resources */,
+				83C5BBFB1F747844009212D8 /* JosefinSans-Light.ttf in Resources */,
+				83C5BBFC1F747844009212D8 /* JosefinSans-LightItalic.ttf in Resources */,
+				83C5BBFD1F747844009212D8 /* JosefinSans-Regular.ttf in Resources */,
+				83C5BBFE1F747844009212D8 /* JosefinSans-SemiBold.ttf in Resources */,
+				83C5BBFF1F747844009212D8 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
+				83C5BC001F747844009212D8 /* JosefinSans-Thin.ttf in Resources */,
+				83C5BC011F747844009212D8 /* JosefinSans-ThinItalic.ttf in Resources */,
+				835790AA1F731426002C105A /* 04n.png in Resources */,
+				835790A71F731426002C105A /* 03d.png in Resources */,
+				835790A91F731426002C105A /* 04d.png in Resources */,
 				8357907E1F72CE2A002C105A /* keys.plist in Resources */,
+				835790A31F731426002C105A /* 01d.png in Resources */,
+				835790A61F731426002C105A /* 02n.png in Resources */,
+				835790AF1F731426002C105A /* 11d.png in Resources */,
+				83A606571F7425A800AEAA28 /* BookingTableViewCell.xib in Resources */,
 				835790641F72CC35002C105A /* LaunchScreen.storyboard in Resources */,
+				835790B21F731426002C105A /* 13n.png in Resources */,
+				835C16961F733AB1005A84E5 /* WeatherTableViewCell.xib in Resources */,
+				83A606531F7413B100AEAA28 /* ForecastTableViewCell.xib in Resources */,
+				835790B31F731426002C105A /* 50d.png in Resources */,
+				835790A41F731426002C105A /* 01n.png in Resources */,
 				835790611F72CC35002C105A /* Assets.xcassets in Resources */,
+				835790AE1F731426002C105A /* 10n.png in Resources */,
+				835790AD1F731426002C105A /* 10d.png in Resources */,
+				835790B11F731426002C105A /* 13d.png in Resources */,
+				835790B01F731426002C105A /* 11n.png in Resources */,
+				835C16A61F736EA2005A84E5 /* FlightTableViewCell.xib in Resources */,
+				835790AC1F731426002C105A /* 09n.png in Resources */,
+				835790B41F731426002C105A /* 50n.png in Resources */,
+				835790A81F731426002C105A /* 03n.png in Resources */,
+				835790A51F731426002C105A /* 02d.png in Resources */,
 				8357905F1F72CC35002C105A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		835790681F72CC35002C105A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				835790AB1F731426002C105A /* 09d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		451BD9C59028377F75941B4F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SunSeekerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		46ABB4F1EBC04FDD0BFEA109 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,36 +465,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBA981D394FCB93186CFA78F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDC3B142CFE32169D665F088 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunSeekerTests/Pods-SunSeekerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,31 +472,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8357905C1F72CC35002C105A /* ViewController.swift in Sources */,
+				835C16951F733AB1005A84E5 /* WeatherTableViewCell.swift in Sources */,
+				835C16A01F735CE7005A84E5 /* Booking.swift in Sources */,
+				835790881F72EF39002C105A /* MapViewController.swift in Sources */,
 				835790841F72CF5B002C105A /* JSONParser.swift in Sources */,
+				83C5BC031F74A615009212D8 /* DatePickerViewController.swift in Sources */,
+				835C16A81F740AC5005A84E5 /* Forecast.swift in Sources */,
+				835C16981F735C5E005A84E5 /* DepartureViewController.swift in Sources */,
+				83A6065B1F742ED800AEAA28 /* CustomPointAnnotation.swift in Sources */,
+				835C169C1F735C84005A84E5 /* ConfirmationViewController.swift in Sources */,
+				835C169E1F735CC2005A84E5 /* BookingsViewController.swift in Sources */,
+				835C16A51F736EA2005A84E5 /* FlightTableViewCell.swift in Sources */,
 				835790801F72CEA9002C105A /* API.swift in Sources */,
+				83A606521F7413B100AEAA28 /* ForecastTableViewCell.swift in Sources */,
+				835C169A1F735C74005A84E5 /* ReturnViewController.swift in Sources */,
 				835790821F72CEF6002C105A /* City.swift in Sources */,
+				835790B61F731B5B002C105A /* ListViewController.swift in Sources */,
+				835C16AA1F741068005A84E5 /* ForecastViewController.swift in Sources */,
+				83C5BBEA1F745AC2009212D8 /* SunSeeker.xcdatamodeld in Sources */,
 				8357905A1F72CC35002C105A /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		835790661F72CC35002C105A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8357906F1F72CC35002C105A /* SunSeekerTests.swift in Sources */,
+				835C16A21F736442005A84E5 /* Flight.swift in Sources */,
+				83A606591F742E8700AEAA28 /* UIResponder+Identifier.swift in Sources */,
+				83A606561F7425A800AEAA28 /* BookingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8357906C1F72CC35002C105A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 835790551F72CC35002C105A /* SunSeeker */;
-			targetProxy = 8357906B1F72CC35002C105A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8357905D1F72CC35002C105A /* Main.storyboard */ = {
@@ -473,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -517,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -555,38 +642,6 @@
 			};
 			name = Release;
 		};
-		835790771F72CC35002C105A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65FB41580596C92CA5AD3D67 /* Pods-SunSeekerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HDU39LZWX7;
-				INFOPLIST_FILE = SunSeekerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MikschSoft.SunSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunSeeker.app/SunSeeker";
-			};
-			name = Debug;
-		};
-		835790781F72CC35002C105A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 270F3A6DD0E9B1C280DB3492 /* Pods-SunSeekerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HDU39LZWX7;
-				INFOPLIST_FILE = SunSeekerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MikschSoft.SunSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunSeeker.app/SunSeeker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,16 +663,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		835790761F72CC35002C105A /* Build configuration list for PBXNativeTarget "SunSeekerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				835790771F72CC35002C105A /* Debug */,
-				835790781F72CC35002C105A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83C5BBE81F745AC2009212D8 /* SunSeeker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */,
+			);
+			currentVersion = 83C5BBE91F745AC2009212D8 /* Bookings.xcdatamodel */;
+			name = SunSeeker.xcdatamodeld;
+			path = Bookings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8357904E1F72CC35002C105A /* Project object */;
 }
