@@ -124,6 +124,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let region = MKCoordinateRegionMake(userCoordinate, span)
         weatherMap.setRegion(region, animated: true)
         self.weatherMap.showsUserLocation = true
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
