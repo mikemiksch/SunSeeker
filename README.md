@@ -18,4 +18,4 @@ App Functionality:
 -Rank cities by favorability of forecast
 -Allow user to “book” a flight to the city of their choice (This part should be faked)
 -Present user with a review of their itinerary
--Use your own judgement to fill in the gaps of the UX```
+-Use your own judgement to fill in the gaps of the UX
